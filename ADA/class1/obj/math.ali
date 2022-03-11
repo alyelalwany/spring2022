@@ -1,0 +1,38 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U math%b		math.adb		531a5141 NE OO PK IL
+
+U math%s		math.ads		77b3be3f EE NE OO PK IL
+
+D math.ads		20220217225338 77b3be3f math%s
+D math.adb		20220217225410 24a9ef7e math%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [gcd math 3 13 none]
+G c Z s b [factorial math 4 13 none]
+G c Z s b [calcpi math 5 13 none]
+X 1 math.ads
+1K9*math 7l5 7e9 2|1b14 38l5 38t9
+3V13*gcd{positive} 3>18 3>21 2|3b13 15l8 15t11
+3i18 A{positive} 2|3b17 4r19
+3i21 B{positive} 2|3b19 5r19
+4V13*factorial{positive} 4>23 2|17b13 24l8 24t17
+4i23 N{natural} 2|17b23 20r19
+5V13*calcPi{float} 2|26b13 35l8 35t14
+X 2 math.adb
+4i7 X{positive} 7r13 8r13 9m13 9r17 11r18 14r14
+5i7 Y{positive} 7r17 8r15 9r19 11m13 11r16
+18i7 Fakt{positive} 21m10 21r20 23r14
+20i11 I{integer} 21r26
+27f7 Prod{float} 32m10 32r17 34r14
+28f7 K{float} 31m10 31r14 32r25 32r28 32r39 32r42
+30i11 I{integer}
+

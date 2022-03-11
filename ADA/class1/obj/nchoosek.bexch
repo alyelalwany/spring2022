@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__nchoosek.o
+[PROJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\class1.gpr
+20220217215256 d432324c717e572c77ce43221291ffe9
+[BOUND OBJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\obj\nchoosek.o
+[GENERATED SOURCE FILES]
+b__nchoosek.ads
+b__nchoosek.adb
+b__nchoosek.ali
+[RESULTING OPTIONS]
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

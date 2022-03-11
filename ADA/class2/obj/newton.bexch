@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__newton.o
+[PROJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\class2.gpr
+20220217210310 5217eb2624a2ff2a0db5d9e5060ce1c9
+[BOUND OBJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\newton.o
+[GENERATED SOURCE FILES]
+b__newton.ads
+b__newton.adb
+b__newton.ali
+[RESULTING OPTIONS]
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

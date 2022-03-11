@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__euler.o
+[PROJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\class1.gpr
+20220217222710 2770bc605f0adaf4ed8201ce2765494c
+[BOUND OBJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\obj\math.o
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\obj\euler.o
+[GENERATED SOURCE FILES]
+b__euler.ads
+b__euler.adb
+b__euler.ali
+[RESULTING OPTIONS]
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

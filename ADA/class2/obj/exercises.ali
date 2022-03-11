@@ -1,0 +1,129 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_IO
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U exercises%b		exercises.adb		a086d6c0 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
+
+U exercises%s		exercises.ads		0ca22c27 EE NE OO PK IL
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D exercises.ads		20220311114704 0ca22c27 exercises%s
+D exercises.adb		20220311114726 02d02f8a exercises%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-valint.ads		20210520051134 e7fcadb7 system.val_int%s
+D s-valuns.ads		20210520051134 dac7b45d system.val_uns%s
+D s-valuei.ads		20210520051134 978dd0a6 system.value_i%s
+D s-valueu.ads		20210520051134 7b8fccf5 system.value_u%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [sumdigits exercises 8 13 none]
+G c Z s b [divisableby9 exercises 9 13 none]
+G c Z s b [perfectnumber exercises 10 13 none]
+G c Z s b [ispalindrome exercises 11 13 none]
+G c Z s b [nthpower exercises 12 13 none]
+G c Z s b [recfactorial exercises 13 13 none]
+G c Z s b [recsum exercises 15 13 none]
+G c Z s b [bubblesort exercises 16 13 none]
+G c Z s b [swap exercises 17 14 none]
+G c Z s b [sumdiagonal exercises 18 13 none]
+G c Z s b [spiralprint exercises 19 14 none]
+G c Z s s [int_arrayIP exercises 5 9 none]
+G c Z s s [matrixIP exercises 6 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 1r23
+X 9 a-textio.ads
+58K13*Text_IO 725e16 12|1w10 1r27
+463U14*Put 12|117s10
+X 11 exercises.ads
+1K9*exercises 21l5 21e14 12|2b14 121l5 121t14
+3I9*Index<integer> 5r29 6r26 6r42 15r40 12|75r40
+4I9*Elem<integer> 5r48 6r61 15r54 17r34 18r48 12|75r54 83r34 84r13 104r48
+. 105r11
+5A9*Int_Array(4I9)<3I9> 15r25 16r36 16r54 12|75r25 90r36 90r54
+6A9*Matrix(4I9)<3I9><3I9> 18r33 19r33 12|104r33 113r33
+8V13*sumDigits{integer} 8>24 12|6b13 14l8 14t17 18s25
+8a24 numAsString{string} 12|6b24 10r16 11r44
+9V13*divisableBy9{boolean} 9>27 12|16b13 24l8 24t20
+9a27 inputString{string} 12|16b27 18r36
+10V13*perfectNumber{boolean} 10>28 12|26b13 40l8 40t21
+10i28 input{integer} 12|26b28 31r29 32r13 36r16
+11V13*isPalindrome{boolean} 11>27 12|42b13 55l8 55t20
+11a27 input{string} 12|42b27 43r22 44r22 47r13 47r26
+12V13*nthPower{positive} 12>23 12>40 12|57b13 62s18 63l8 63t16
+12i23 x{positive} 12|57b23 60r17 62r14 62r28
+12i40 n{positive} 12|57b40 59r10 62r31
+13V13*recFactorial{positive} 13>27 12|65b13 70s18 71l8 71t20
+13i27 x{positive} 12|65b27 67r10 70r14 70r32
+15V13*recSum{4I9} 15>21 15>36 12|75b13 80s15 81l8 81t14
+15a21 T{5A9} 12|75b21 80r23 80r35
+15i36 N{3I9} 12|75b36 77r10 80r26 80r38
+16V13*bubbleSort{5A9} 16=25 12|90b13 102l8 102t18
+16a25 T{5A9} 12|90b25 92r16 92r27 93r19 93r30 94r16 94r25 95m22 95r22 95m29
+. 95r29 100r14
+17U14*Swap 17=20 17=23 12|83b14 88l8 88t12 95s16
+17i20 A{4I9} 12|83b20 84r21 86m7
+17i23 B{4I9} 12|83b23 86r12 87m7
+18V13*sumDiagonal{4I9} 18>26 12|104b13 111l8 111t19
+18a26 M{6A9} 12|104b26 107r16 108r19
+19U14*spiralPrint 19>27 12|113b14 120l8 120t19
+19a27 M{6A9} 12|113b27 116r16
+X 12 exercises.adb
+7i7 sum{integer} 11m10 11r17 13r14
+10i11 i{integer} 11r57
+17b7 flag{boolean} 21m10 23r14
+18i7 sum{integer} 20r10
+28b7 flag{boolean} 37m10 39r14
+29i7 sum{integer} 33m13 33r20 36r10
+31i11 i{integer} 32r23 33r26
+43i7 N{integer} 46r18 47r33 50m10 50r15
+44i7 I{integer} 46r13 47r20 51m10 51r15
+84i7 Tmp{11|4I9} 87r12
+92i11 I<integer> 93r39
+93i14 J<integer> 94r19 94r28 95r25 95r32
+105i7 S{11|4I9} 108m10 108r15 110r14
+107i11 I<integer> 108r22 108r25
+116i11 I<integer>
+

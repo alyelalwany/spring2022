@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__pi.o
+[PROJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\class2.gpr
+20220217211740 4726b4ed174c4af8e8aa708dd9eb46e5
+[BOUND OBJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\pi.o
+[GENERATED SOURCE FILES]
+b__pi.ads
+b__pi.adb
+b__pi.ali
+[RESULTING OPTIONS]
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__factorial.o
+[PROJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\class2.gpr
+20220217205846 b51a63f0994ee3711dd7e0fe24ac42dc
+[BOUND OBJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\factorial.o
+[GENERATED SOURCE FILES]
+b__factorial.ads
+b__factorial.adb
+b__factorial.ali
+[RESULTING OPTIONS]
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\class1.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\class1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\src\euler.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\class1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\class1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\src\math.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\class1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\src\math.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\class1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\src\nchoosek.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\class1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\src\math.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\class1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\src\nchoosek.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\class1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\src\euler.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\class1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class1\src\nchoosek.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

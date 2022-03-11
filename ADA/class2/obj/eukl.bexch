@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__eukl.o
+[PROJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\class2.gpr
+20220217205022 7e08636d4b5b451cebfb1c6dcf86b407
+[BOUND OBJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\eukl.o
+[GENERATED SOURCE FILES]
+b__eukl.ads
+b__eukl.adb
+b__eukl.ali
+[RESULTING OPTIONS]
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

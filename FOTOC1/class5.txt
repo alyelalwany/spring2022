@@ -1,0 +1,45 @@
+Chomsky-normalform(CNF) : A->BC, A->t, (S->@); A,B, € N, t € T 
+
+G = ({S,A,B,C,D},{x,y,z}, S, {S->ABC|xAD, A->BC|AyD, B->CC|z, C->Ax|@, D-> By|xx|z})
+
+I) Lambda-freeing
+
+E1 = {C}, E2={C,B}, E3={C,B,A}, E4={A,B,C,S} E5={S,A,B,C}
+G'= ({S,A,B,C,D},{x,y,z}, S,{S->@|ABC|BC|AC|AB|A|B|C|xAD|xD, A->BC|C|AyD|yD, B->CC|C|z, C->Ax|x, D->By|xx|y|z})
+
+
+II) Introducing fake terminals 
+We introduce the fake non-terminal when the terminal is not on its own check 'D' for reference
+
+G'' = ({S,A,B,C,D,X,Y,Z}, {x,y,z},S,{X->x, Y->y, Z->z, S->@|ABC|BC|AC|AB|A|B|C|XAD, A->BC|B|C|AYD|YD, B->CC|C|z, C->AX|x, D->BY|XX|y|z})
+
+
+III) Chain-freeing (A->B)
+
+Ch(S) = {S,A,B,C} Ch(A) = {A,B,C} Ch(B) = {B,C} Ch(C) = {C} Ch(D) = {D} Ch(X) = {X} Ch(Y) = {Y} Ch(Z) = {Z}
+
+G'"" = ({S,A,B,C,D,X,Y,Z},{x,y,z},S,{S->@|ABC|BC|AC|AB|XAD|XD|AYD|YD|CC|z|AX|x,A->BC|AYD|YD|CC|z|AX|x, B->CC|z|AX|x,C->AX|x, D->BY|XX|y|z,X->x,Y->y,Z->z})
+
+IV) Shortening the rules
+
+G"" = ({S,A,B,C,D,E,F,X,Y,Z},{x,y,z},S,{S->@|AE|BC|AC|AB|XF|XD|AG|YD|CC|z|AX|x,A->BC|AG|YD|CC|z|AX|x,B->CC|z|AX|x, C->AX|x, D->BY|XX|y|z , E->BC,F->AD,G->YD, X->x,Y->y,Z->z})
+
+-----------------------------------------------
+
+G2 = ({S,A,B,C,D},{x,y,z},S,{S->AxB|yCz, A->BCD|xyz, B->BCBC|@, C->Axy|@, D->xy|z})
+
+I) Lambda-freeing
+
+E1 = {B,C}; E2=E1
+
+G2' = ({S,A,B,C,D},{x,y,z}, S->AxB|Ax|yCz|yz, A-> BCD|BD|CD|D|xyz, B->BCBC||CBC|BBC|BCC|BCB|BC|CB|BB|CC|B|C, C->Axy, D->xy|z )
+
+
+II) Introducing fake terminals 
+
+G2" = ({S,A,B,C,D,X,Y,Z},{x,y,z},S,{X->x,Y->y, Z->z, S->AXB|AX|YCZ|YZ, A->BCD|BD|CD|D|XYZ,B->BCBC||CBC|BBC|BCC|BCB|BC|CB|BB|CC|B|C, C->AXY , D->XY|z})
+
+III) Chain-freeing (A->B)
+
+
+Ch(S) = 

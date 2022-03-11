@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1646732433 source:c:\users\i550774\documents\personal\tech\uni\spring2022\oop\sequentialfiles\main.cpp
+	<iostream>
+	<fstream>
+

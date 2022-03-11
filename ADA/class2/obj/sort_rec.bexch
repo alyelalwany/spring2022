@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__sort_rec.o
+[PROJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\class2.gpr
+20220228195412 a6aed60b2b500e2ea2d4ed255c172b23
+[BOUND OBJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\sort_rec.o
+[GENERATED SOURCE FILES]
+b__sort_rec.ads
+b__sort_rec.adb
+b__sort_rec.ali
+[RESULTING OPTIONS]
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class2\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

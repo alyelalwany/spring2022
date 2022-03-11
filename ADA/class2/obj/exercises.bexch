@@ -1,0 +1,22 @@
+[MAPPING FILE]
+C:\Users\I550774\AppData\Local\Temp\GNAT-TEMP-000005.TMP
+[TOOLCHAIN VERSION]
+ada
+GNAT 2021
+[MAIN BASE NAME]
+exercises
+[COMPILER PATH]
+c:\gnat\2021\bin\gcc.exe
+[COMPILER LEADING SWITCHES]
+-c
+-x
+ada
+-gnatA
+[MAIN DEPENDENCY FILE]
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class2\obj\exercises.ali
+[DEPENDENCY FILES]
+[BINDING OPTIONS]
+gnatbind_prefix=
+[PROJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class2\class2.gpr
+20220311082644 4cc34b8bb12bae35778a102ea631ecb5
