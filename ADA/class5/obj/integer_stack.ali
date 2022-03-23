@@ -1,0 +1,37 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U integer_stack%b	integer_stack.ads	84635ebe NE OO PK
+W stacks%s		stacks.adb		stacks.ali  ED
+
+U integer_stack%s	integer_stack.ads	e0f319ce EB NE OO PK
+W stacks%s		stacks.adb		stacks.ali
+
+D integer_stack.ads	20220314162332 84635ebe integer_stack%s
+D integer_stack.ads	20220314162332 84635ebe integer_stack%b
+D stacks.ads		20220314161450 64904770 stacks%s
+D stacks.adb		20220314163148 c1589140 stacks%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c s s s [s integer_stack 2 1 none]
+G c Z s s [push integer_stack 8 14 2_1]
+G c Z s s [pop integer_stack 9 14 2_1]
+G c Z s s [top integer_stack 10 13 2_1]
+G c Z s s [isempty integer_stack 11 13 2_1]
+G c Z s s [isfull integer_stack 12 13 2_1]
+G c Z s s [size integer_stack 13 13 2_1]
+G c Z s s [tarrayIP integer_stack 16 9 2_1]
+G c Z s s [stackIP integer_stack 17 9 2_1]
+G r i none [s integer_stack 2 1 none] [stacks standard 4 9 none]
+X 2 integer_stack.ads
+2K9*Integer_Stack[3|4]
+X 3 stacks.ads
+4k9*Stacks 2|1w6 2r30 3|22e11
+

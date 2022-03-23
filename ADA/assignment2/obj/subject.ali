@@ -1,0 +1,32 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+
+U subject%s		subject.ads		2207dd1b NE OO PK IL
+
+D subject.ads		20220319001616 2207dd1b subject%s
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+X 1 subject.ads
+1K9*subject 6l5 6e12
+3E9*Subject_Names 3e52
+3n26*CPP{3E9}
+3n31*C{3E9}
+3n34*JAVA{3E9}
+3n40*Python{3E9}
+3n48*ADA{3E9}
+4E9*Grade_Range 4e80
+4n25*NOT_WRITTEN{4E9}
+4n38*FAIL{4E9}
+4n44*PASS{4E9}
+4n50*SATISFACTORY{4E9}
+4n64*GOOD{4E9}
+4n70*EXCELLENT{4E9}
+

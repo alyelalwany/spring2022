@@ -11,11 +11,12 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 
-U main%b		main.adb		3407009f NE OO SU
+U main%b		main.adb		5afef97c NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W exercises%s		exercises.adb		exercises.ali
+W operations%s		operations.adb		operations.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
@@ -30,7 +31,8 @@ D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D exercises.ads		20220311114704 0ca22c27 exercises%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20220311113710 9651f9d5 main%b
+D main.adb		20220311192714 6a9f009e main%b
+D operations.ads	20220311192410 923700a8 operations%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
@@ -48,56 +50,60 @@ D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
-G c Z b b [main standard 3 11 none]
-G r c none [main standard 3 11 none] [spiralprint exercises 19 14 none]
+G c Z b b [main standard 4 11 none]
+G r c none [main standard 4 11 none] [increment_by operations 3 13 none]
 X 1 ada.ads
 16K9*Ada 20e8 14|1r6 1r23
 X 9 a-textio.ads
 58K13*Text_IO 725e16 14|1w10 1r27
 X 11 exercises.ads
-1K9*exercises 21e14 14|2w6 2r21
+1K9*exercises 21e14 14|2w6 2r23
 4I9*Elem<integer>
-5A9*Int_Array(4I9)<3I9> 14|23r14
-6A9*Matrix(4I9)<3I9><3I9> 14|30r8 31r8 32r18
-19U14*spiralPrint 14|39s4
+5A9*Int_Array(4I9)<3I9> 14|24r20
+6A9*Matrix(4I9)<3I9><3I9> 14|31r18 32r18 33r18
 X 14 main.adb
-3U11*Main 3b11 41l5 41t9
-5A9 My_Array(integer)<integer> 22r8
-6E9 Days 7e70 8r33
-7n7 Monday{6E9} 25r39
-7n15 Tuesday{6E9}
-7n24 Wednesday{6E9}
-7n35 Thursday{6E9}
-7n45 Friday{6E9} 25r49 26r7
-7n53 Saturday{6E9}
-7n63 Sunday{6E9}
-8A9 Workload_Type(natural)<6E9> 25r24
-10E9 Month_Type 12e35 16r15
-11n7 January{10E9} 16r29
-11n16 February{10E9} 21r49
-11n26 March{10E9}
-11n33 April{10E9}
-11n40 May{10E9}
-11n45 June{10E9}
-11n51 July{10E9}
-11n57 August{10E9}
-11n65 September{10E9}
-12n7 October{10E9}
-12n16 November{10E9}
-12n26 December{10E9} 20r32
-14R9 Date 18e14 20r19 21r20
-15i7 Day{integer} 21m29
-16e7 Month{10E9} 21m40
-17i7 Year{integer} 21m59
-20r4 Ada_Birthday{14R9}
-21r4 Leap_Day_2020{14R9}
-22a4 A{5A9}
-23a4 T_array{11|5A9}
-24a4 num_String{string}
-25a4 Workload{8A9}
-27i4 S{integer}
-28i4 sum{integer}
-30a4 M{11|6A9}
-31a4 I{11|6A9}
-32a4 test_matrix{11|6A9} 39r17
+4U11*Main 4b11 42l5 42t9
+6A9 My_Array(integer)<integer> 23r20
+7E9 Days 8e70 9r33
+8n7 Monday{7E9} 26r44
+8n15 Tuesday{7E9}
+8n24 Wednesday{7E9}
+8n35 Thursday{7E9}
+8n45 Friday{7E9} 26r54 27r7
+8n53 Saturday{7E9}
+8n63 Sunday{7E9}
+9A9 Workload_Type(natural)<7E9> 26r29
+11E9 Month_Type 13e35 17r15
+12n7 January{11E9} 17r43
+12n16 February{11E9} 22r49
+12n26 March{11E9}
+12n33 April{11E9}
+12n40 May{11E9}
+12n45 June{11E9}
+12n51 July{11E9}
+12n57 August{11E9}
+12n65 September{11E9}
+13n7 October{11E9}
+13n16 November{11E9}
+13n26 December{11E9} 21r33
+15R9 Date 19e14 21r20 22r20
+16i7 Day{integer} 22m29
+17e7 Month{11E9} 22m40
+18i7 Year{integer} 22m59
+21r4 Ada_Birthday{15R9}
+22r4 Leap_Day_2020{15R9}
+23a4 A{6A9}
+24a4 T_array{11|5A9}
+25a4 num_String{string}
+26a4 Workload{9A9}
+28i4 S{integer}
+29i4 sum{integer}
+31a4 M{11|6A9}
+32a4 I{11|6A9}
+33a4 test_matrix{11|6A9}
+35i4 someValue{integer} 40r22
+36i4 R{integer} 40m4
+X 15 operations.ads
+1K9*Operations 14|3w6 3r23 15|5e15
+3V13*Increment_By{integer} 14|40s9
 

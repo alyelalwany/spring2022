@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__morethanonce_demo.o
+[PROJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\midterm_prep\midterm_prep.gpr
+20220323023812 b0bc91f0a5572f66b3ba6f4621b0ce5c
+[BOUND OBJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\midterm_prep\obj\doubleslimited.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\midterm_prep\obj\morethanonce.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\midterm_prep\obj\morethanonce_demo.o
+[GENERATED SOURCE FILES]
+b__morethanonce_demo.ads
+b__morethanonce_demo.adb
+b__morethanonce_demo.ali
+[RESULTING OPTIONS]
+-LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\midterm_prep\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\midterm_prep\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

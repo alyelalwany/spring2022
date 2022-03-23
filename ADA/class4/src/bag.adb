@@ -1,52 +1,55 @@
-with Ada.Integer_Text_IO, Ada.Text_IO; use Ada.Integer_Text_IO, Ada.Text_IO;
+with Ada.Integer_Text_IO, Ada.Text_IO;
+use Ada.Integer_Text_IO, Ada.Text_IO;
 package body Bag is
-   
-   function insert_one(B: in out BagType; E: Elem) is 
+
+   procedure insertOne (B : in out BagType; E : in Elem) is
    begin
-             B(E) := B(E)+1;
-   end insert_one;
+      B (E) := B (E) + 1;
+   end insertOne;
    
-   function extract_one(B: in out BagType; E: Elem) is
+   procedure insertMultiple
+     (B : in out BagType; E : in Elem; Count : in Positive)
+   is
    begin
-      
-      if B(E) == 0  then
-         return -1;
-      end if;
-      B(E) := B(E) -1;
-      return B(E);
-            
-   end extract_one;
-   
-   function is_empty(B: in BagType) is 
+      B (E) := B (E) + Count;
+   end insertMultiple;
+
+   function isEmpty (B : in BagType) return Boolean is
    begin
-      for I in B'Range loop         
-         if B(I) != 0 then
+      for I in B'Range loop
+         if B (I) /= 0 then
             return False;
          end if;
       end loop;
       return True;
-   end is_empty;
-   
-   function insert_multiple( B: BagType; E: Elem; Count : Positive) is
+   end isEmpty;
+
+   procedure extractMultiple
+     (B : in out BagType; E : in Elem; Count : in Positive)
+   is
    begin
-      B(E):= B(E)+ Count; 
-      return B;
-   end insert_multiple;
-      
-   function extract_multiple(B: BagType; E: Elem; Count : Positive) is 
-   begin 
-      if(B(E) > Count) then
-         B(E) := B(E) - Count;
+      if (B (E) > Count) then
+         B (E) := B (E) - Count;
+      else
+         Put_Line ("Only removed as many as I have from this item");
+         B (E) := 0;
       end if;
-      
-      return B;
-   end extract_multiple;
-   
-   procedure printBag(B: BagType) is 
+
+   end extractMultiple;
+
+   procedure extractOne (B : in out BagType; E : in Elem) is
    begin
-      for i in 1..100 loop
-         Put_Line(Integer'Image(I) & " Count : " & Positive'Image(B(i)));
-         end loop;
-   end printBag;
-      
+
+      if B (E) /= 0 then
+         B (E) := B (E) - 1;
+      end if;
+   end extractOne;
+
+   procedure print (B : BagType) is
+   begin
+      for i in 1 .. 100 loop
+         Put_Line (Integer'Image (i) & " : " & Positive'Image (B (i)));
+      end loop;
+   end print;
+
 end Bag;

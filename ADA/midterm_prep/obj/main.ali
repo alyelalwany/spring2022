@@ -1,0 +1,145 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -gnat2020
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U main%b		main.adb		bb5002f2 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W fold%s		fold.adb		fold.ali
+W map%s			map.adb			map.ali
+Z max_pos%s		max_pos.adb		max_pos.ali
+W maximum%s		maximum.adb		maximum.ali
+W search%s		search.adb		search.ali
+W sort%s		sort.adb		sort.ali
+Z swap%s		swap.adb		swap.ali
+Z system.img_flt%s	s-imgflt.ads		s-imgflt.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D fold.ads		20220322214454 57194204 fold%s
+D fold.adb		20220322215210 6a248ff7 fold%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D main.adb		20220322231332 1a6ba184 main%b
+D map.ads		20220322220210 8846d129 map%s
+D map.adb		20220322221056 40168927 map%b
+D max_pos.ads		20220322230034 84d3ea14 max_pos%s
+D max_pos.adb		20220322231210 25f5fe26 max_pos%b
+D maximum.ads		20220322222544 8736d5a1 maximum%s
+D maximum.adb		20220322222130 664312c6 maximum%b
+D search.ads		20220322223448 c1930da0 search%s
+D search.adb		20220322223652 97793b29 search%b
+D sort.ads		20220322225924 96353d37 sort%s
+D sort.adb		20220322231148 41735bd4 sort%b
+D swap.ads		20220322225724 9c53c069 swap%s
+D swap.adb		20220323004636 880fe4e8 swap%b
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imager.ads		20210520051134 500b11a9 system.image_r%s
+D s-imageu.ads		20210520051134 525c30c6 system.image_u%s
+D s-imgflt.ads		20210520051134 78689de8 system.img_flt%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-imguns.ads		20210520051134 0e4da2ac system.img_uns%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-powflt.ads		20210520051134 46f7a1b9 system.powten_flt%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z b b [main standard 3 11 none]
+G r i none [main standard 3 11 none] [fold standard 8 10 none]
+G r i none [main standard 3 11 none] [map standard 8 10 none]
+G r i none [main standard 3 11 none] [maximum standard 5 12 none]
+G r i none [main standard 3 11 none] [search standard 6 11 none]
+G r i none [main standard 3 11 none] [sort standard 6 11 none]
+G r i none [main standard 3 11 none] [swap standard 3 11 none]
+G r i none [main standard 3 11 none] [max_pos standard 6 10 none]
+X 1 ada.ads
+16K9*Ada 20e8 15|1r40 2r5
+X 9 a-textio.ads
+58K13*Text_IO 725e16 15|1w44 2r9
+506U14*Put_Line 15|50s4 51s4 52s4 53s4 55s4 58s7 60s4 62s4 63s4 65s4 67s4
+. 70s7 72s7 74s4 75s4 78s7 80s4 83s7 85s4
+X 11 fold.ads
+8v10*fold 15|1w6 9r24 10r25
+8a16 T{15|8A9} 15|51r35[9] 52r36[10]
+X 15 main.adb
+3U11*Main 3b11 87l5 87t9
+6I9 FoldIndex<integer> 8r25 9r40 10r41
+7I9 FoldElem<integer> 8r48 9r30 10r31 51r14 52r14
+8A9 FoldT(7I9)<6I9> 9r51 10r52
+9V13 Sum[11|8]{7I9} 12|1b10 15|51s30
+10V13 Prod[11|8]{7I9} 12|1b10 15|52s30
+13A9 t1(integer)<integer> 19r57 20r8
+14A9 t2(float)<integer> 19r61 21r8
+15V13 square{float} 15b13 15>21 18l8 18t14 19r65
+15i21 x{integer} 17r21 17r25
+19V13 my_map[16|8]{14A9} 56s9 17|1b10
+20a4 a{13A9} 21r12 56r17
+21a4 b{14A9} 56m4 57r13 58r30
+26V13 F_Max[20|5]{float} 63s27 21|1b10
+29A9 SearchT(integer)<integer> 36r52 38r22
+30V13 is_negative{boolean} 30b13 30>26 33l8 33t19 37r15
+30i26 b{integer} 32r14
+35U14 my_search[22|6] 68s4 23|1b11
+38a4 array_to_search{29A9} 68r15
+39b4 search_flag{boolean} 68m32 69r7
+40i4 indexFound{integer} 68m45 70r32
+43A9 SortArray(float)<character> 44r55 45r55 47r20
+44U14 Sort_incr[24|6] 76s4 25|2b11
+45U14 Sort_decr[24|6] 81s4 25|2b11
+47a4 SortArrayDemo{43A9} 76m15 76r15 77r13 78r30 81m15 81r15 82r13 83r30
+57i8 i{integer} 58r33
+77e8 i{character} 78r45
+82e8 i{character} 83r45
+X 16 map.ads
+8v10*Map 15|1w12 19r27
+X 20 maximum.ads
+5v12*Maximum 15|1w17 26r26
+X 22 search.ads
+2+9 Elem 15|36r7
+3E9 Index 15|36r24
+4A9 TArray(2+9)<3E9> 15|36r42
+5V18 Prop{boolean} 15|37r7
+6u11*Search 15|1w26 35r31
+X 24 sort.ads
+5V19 "<"{boolean} 18|5i19
+6u11*Sort 15|1w34 44r31 45r31
+X 25 sort.adb
+3U14 My_Swap[26|3] 27|1b11[15|45]
+4V13 Max_Position[18|6]{character} 19|1b10[15|45]
+

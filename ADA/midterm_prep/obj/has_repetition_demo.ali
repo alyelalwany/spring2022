@@ -1,0 +1,71 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -gnat2020
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U has_repetition_demo%b	has_repetition_demo.adb	3e66d8d0 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W has_repetition%s	has_repetition.adb	has_repetition.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D has_repetition.ads	20220323020618 1a82e8ef has_repetition%s
+D has_repetition.adb	20220323031924 5ab54670 has_repetition%b
+D has_repetition_demo.adb  20220323025434 8a10e552 has_repetition_demo%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z b b [has_repetition_demo standard 3 11 none]
+G r i none [has_repetition_demo standard 3 11 none] [has_repetition standard 5 10 none]
+X 1 ada.ads
+16K9*Ada 20e8 13|2r6 2r23
+X 9 a-textio.ads
+58K13*Text_IO 725e16 13|2w10 2r27
+262U14*New_Line 13|10s4 14s4 18s4
+506U14*Put_Line 13|12s7 16s7 20s7
+X 11 has_repetition.ads
+2+9 Elem 13|5r7
+3E9 Index 13|5r26
+4A9 Vector(2+9)<3E9> 13|5r45
+5v10*has_repetition 13|1w6 4r39
+X 13 has_repetition_demo.adb
+3U11*has_repetition_demo 3b11 23l5 23t24
+4V13 Has_Double_Letters[11|5]{boolean} 12|2b10 13|11s7 15s7 19s7
+6a4 S{string} 11r27
+7a4 S1{string} 15r27
+8a4 S2{string} 19r27
+

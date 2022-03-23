@@ -1,0 +1,121 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -gnat2020
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_ENUMERATION_MAPS
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+
+U bag_demo%b		bag_demo.adb		827a83c8 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W bag%s			bag.adb			bag.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.img_char%s	s-imgcha.adb		s-imgcha.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bag.ads		20220323155042 368bd344 bag%s
+D bag.adb		20220323155034 a0872b1a bag%b
+D bag_demo.adb		20220323155952 1a0585e1 bag_demo%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-conca3.ads		20210520051132 0b705ca5 system.concat_3%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imgcha.ads		20210520051134 9c3458e7 system.img_char%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z b b [bag_demo standard 5 11 none]
+G r i none [bag_demo standard 5 11 none] [bag standard 4 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 15|1r6 2r6 4r6 4r23 13r7 14r7 15r7 16r7 26r7
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[11|46] 15|1w10 2w10 13r11 15r11
+X 10 a-textio.ads
+58K13*Text_IO 725e16 15|4w10 4r27 14r11 16r11 26r11
+262U14*New_Line 15|16s19 26s19 54s4 58s4 73s4
+390U14*Put 15|23s7
+463U14*Put 15|14s19 24s7 25s7
+X 11 a-tiinio.ads
+80U14*Put 15|13s27[3|18] 15s27[3|18]
+X 13 bag.ads
+2+9 Elem 15|6r36 7r33
+4k9*Bag 28e8 15|3w6 6r31 7r28
+5R9 BagType 15|8r23[7] 9r26[6]
+7V13 getMultiplicity{natural} 15|15s44[6] 25s36[7]
+8U14 add 15|34s16[6] 35s16[6] 36s16[6] 38s16[6] 39s16[6] 40s16[6] 41s16[6]
+. 42s16[6] 44s16[6] 45s16[6] 46s16[6] 47s16[6] 48s16[6] 50s16[6] 52s16[6]
+. 74s13[7] 75s13[7] 76s13[7] 77s13[7] 78s13[7] 79s13[7] 80s13[7] 81s13[7]
+. 82s13[7] 83s13[7] 84s13[7] 85s13[7]
+10U14 remove 15|59s16[6] 60s16[6] 61s16[6] 62s16[6] 63s16[6] 64s16[6] 65s16[6]
+. 67s16[6] 68s16[6] 69s16[6] 70s16[6]
+10r22 B{5R9[15|6]} 15|59r24[6] 60r24[6] 61r24[6] 62r24[6] 63r24[6] 64r24[6]
+. 65r24[6] 67r24[6] 68r24[6] 69r24[6] 70r24[6]
+10i42 E{integer} 15|59r35[6] 60r35[6] 61r35[6] 62r35[6] 63r35[6] 64r35[6]
+. 65r35[6] 67r35[6] 68r35[6] 69r35[6] 70r35[6]
+11U14 print 15|53s16[6] 56s16[6] 71s16[6] 86s13[7]
+15U22 process_elem 15|19r7[6] 30r7[7]
+16u14 For_Each 15|18r43[6] 29r44[7]
+X 15 bag_demo.adb
+5U11*bag_demo 5b11 88l5 88t13
+6K12 Integer_Bag[13|4] 9r14 15r32 18r31 34r4 35r4 36r4 38r4 39r4 40r4 41r4
+. 42r4 44r4 45r4 46r4 47r4 48r4 50r4 52r4 53r4 56r4 59r4 60r4 61r4 62r4 63r4
+. 64r4 65r4 67r4 68r4 69r4 70r4 71r4
+7K12 Char_Bag[13|4] 8r14 25r27 29r35 74r4 75r4 76r4 77r4 78r4 79r4 80r4 81r4
+. 82r4 83r4 84r4 85r4 86r4
+8r4 charBag{13|5R9[7]} 25r53 74m18 74r18 75m18 75r18 76m18 76r18 77m18 77r18
+. 78m18 78r18 79m18 79r18 80m18 80r18 81m18 81r18 82m18 82r18 83m18 83r18
+. 84m18 84r18 85m18 85r18 86m20 86r20 87m19 87r19
+9r4 bag1{13|5R9[6]} 15r61 34m21 34r21 35m21 35r21 36m21 36r21 38m21 38r21
+. 39m21 39r21 40m21 40r21 41m21 41r21 42m21 42r21 44m21 44r21 45m21 45r21
+. 46m21 46r21 47m21 47r21 48m21 48r21 50m21 50r21 52m21 52r21 53m23 53r23
+. 55m15 55r15 56m23 56r23 59m29 59r29 60m29 60r29 61m29 61r29 62m29 62r29
+. 63m29 63r29 64m29 64r29 65m29 65r29 67m29 67r29 68m29 68r29 69m29 69r29
+. 70m29 70r29 71m23 71r23
+10i4 E{integer} 34r27 35r27 36r27 37m4 38r27 39r27 40r27 41r27 42r27 43m4
+. 44r27 45r27 46r27 47r27 48r27 49m4 50r27 51m4 52r27
+11U14 printElement 11b14 11=28 17l8 17t20 19r23
+11i28 N{integer} 13r32 15r67
+18U14 printEach[13|16] 55s4
+21U14 printElement 21b14 21=28 27l8 27t20 30r23
+21e28 N{character} 23r12 25r62
+29U14 printEachChar[13|16] 87s4
+

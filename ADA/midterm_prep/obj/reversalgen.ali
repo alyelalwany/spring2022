@@ -1,0 +1,35 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U reversalgen%b		reversalgen.adb		f7e862e3 NE OO SU GE IL
+W swap%s		swap.adb		swap.ali
+
+U reversalgen%s		reversalgen.ads		dfb331a1 BN EE NE OO GE IL
+
+D reversalgen.ads	20220323004724 dfb331a1 reversalgen%s
+D reversalgen.adb	20220323004510 b408932b reversalgen%b
+D swap.ads		20220322225724 9c53c069 swap%s
+D swap.adb		20220323004636 880fe4e8 swap%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [reversalgen standard 5 11 none]
+X 1 reversalgen.ads
+2+9 Elem 4r45 2|3r34
+3E9 Index 4r26 2|4r13 5r13 10r17 11r17
+4A9 TArray(2+9)<3E9> 5r35 2|2r35
+5u11*reversalgen 5=24 2|2b11 13l5 13t16
+5*24 T{4A9} 2|2b24 4r22 5r22 9m15 9r15 9m26 9r26
+X 2 reversalgen.adb
+3U14 MySwap[3|3] 9s7
+4*4 Start{1|3E9} 8r10 9r18 10m7 10r29
+5*4 Finish{1|3E9} 8r18 9r29 11m7 11r29
+X 3 swap.ads
+3u11*Swap 2|1w6 3r28
+

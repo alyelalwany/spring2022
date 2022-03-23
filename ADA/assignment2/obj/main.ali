@@ -1,0 +1,199 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -gnat2020
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+
+U main%b		main.adb		5f63683e NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W class%s		class.adb		class.ali
+W student%s		student.adb		student.ali
+W subject%s		subject.ads		subject.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.img_flt%s	s-imgflt.ads		s-imgflt.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D class.ads		20220319204312 f7285115 class%s
+D class.adb		20220319213020 3cdffa00 class%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D main.adb		20220319212944 abaf2aab main%b
+D student.ads		20220319164458 8f171bf6 student%s
+D subject.ads		20220319001616 2207dd1b subject%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20210520051132 0b705ca5 system.concat_3%s
+D s-conca4.ads		20210520051132 7e642b20 system.concat_4%s
+D s-conca5.ads		20210520051132 875e432e system.concat_5%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imager.ads		20210520051134 500b11a9 system.image_r%s
+D s-imageu.ads		20210520051134 525c30c6 system.image_u%s
+D s-imgflt.ads		20210520051134 78689de8 system.img_flt%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-imguns.ads		20210520051134 0e4da2ac system.img_uns%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-powflt.ads		20210520051134 46f7a1b9 system.powten_flt%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z b b [main standard 5 11 none]
+G r i none [main standard 5 11 none] [class standard 6 9 none]
+G r s student_grades [main standard 5 11 none] [student_gradesIP student 19 9 none]
+G r c none [main standard 5 11 none] [set_grade student 12 14 none]
+G r c none [main standard 5 11 none] [print_grades student 13 14 none]
+G r c none [main standard 5 11 none] [do_all_grades_written student 7 13 none]
+G r c none [main standard 5 11 none] [end_semester_for_student student 15 14 none]
+G r c none [main standard 5 11 none] [does_student_pass_all_subjects student 8 13 none]
+G r c none [main standard 5 11 none] [put_grade_to_all_subjects student 14 14 none]
+G r c none [main standard 5 11 none] [grade_average student 9 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 15|2r6 2r23
+X 9 a-textio.ads
+58K13*Text_IO 725e16 15|2w10 2r27
+506U14*Put_Line 15|138s7 139s7 143s10 144s10 149s10 150s10 154s7 157s7 160s7
+. 173s7 177s7 192s4 194s4
+X 11 class.ads
+4+11 Id 15|6r36
+5V19 "<"{boolean} 15|6r52
+6k9*class 31e10 15|1w6 6r29
+7R9 Class_Type 15|28r26[6] 29r26[6] 30r26[6]
+10V13 Did_Everyone_Get_Grade{boolean} 15|192s39[6] 194s39[6]
+13U14 Print_Class 15|183s14[6] 184s14[6] 185s14[6] 199s14[6] 203s14[6]
+14U14 Compare 15|187s14[6] 188s14[6] 189s14[6] 197s14[6] 206s14[6] 208s14[6]
+15U14 End_Semester 15|202s14[6]
+16U14 Change_Grade 15|193s14[6]
+17U14 Add_Student_Grade 15|170s17[6] 174s17[6] 178s17[6]
+17r32 C{7R9[15|6]} 15|170r36[6] 174r36[6] 178r36[6]
+17r54 S{16|4R9} 15|170r49[6] 174r49[6] 178r49[6]
+19U14 Set_ID 15|164s14[6] 165s14[6] 166s14[6]
+19r21 C{7R9[15|6]} 15|164r22[6] 165r22[6] 166r22[6]
+19i40 name{integer} 15|164r35[6] 165r35[6] 166r35[6]
+22u14 For_Each 15|12r50[6]
+X 15 main.adb
+5U11*Main 5b11 210l5 210t9
+6K12 classDemo[11|6] 12r40 28r16 29r16 30r16 164r4 165r4 166r4 170r7 174r7
+. 178r7 183r4 184r4 185r4 187r4 188r4 189r4 192r29 193r4 194r29 197r4 199r4
+. 202r4 203r4 206r4 208r4
+7U14 set_excellent 7b14 7=29 10l8 10t21 12r60
+7r29 S{16|4R9} 9m39
+12U14 set_each_excellent[11|22] 198s4 207s4
+13r4 student1{16|4R9} 36m15 36r15 37m15 37r15 38m15 38r15 39m15 39r15 121r21
+14r4 student2{16|4R9} 41m15 41r15 42m15 42r15 43m15 43r15 44m15 44r15 45m15
+. 45r15 51m15 51r15 122r21
+15r4 student3{16|4R9} 47m15 47r15 48m15 48r15 49m15 49r15 50m15 50r15 123r21
+16r4 student4{16|4R9} 53m15 53r15 54m15 54r15 55m15 55r15 56m15 56r15 57m15
+. 57r15 124r21
+17r4 student5{16|4R9} 59m15 59r15 60m15 60r15 61m15 61r15 62m15 62r15 63m15
+. 63r15 125r21
+18r4 student6{16|4R9} 65m15 65r15 66m15 66r15 67m15 67r15 68m15 68r15 69m15
+. 69r15 126r21
+19r4 student7{16|4R9} 71m15 71r15 72m15 72r15 73m15 73r15 74m15 74r15 75m15
+. 75r15 127r21
+20r4 student8{16|4R9} 77m15 77r15 78m15 78r15 79m15 79r15 80m15 80r15 81m15
+. 81r15 128r21
+21r4 student9{16|4R9} 83m15 83r15 84m15 84r15 85m15 85r15 86m15 86r15 87m15
+. 87r15 129r21
+22r4 student10{16|4R9} 89m15 89r15 90m15 90r15 91m15 91r15 92m15 92r15 130r21
+23r4 student11{16|4R9} 95m15 95r15 96m15 96r15 97m15 97r15 98m15 98r15 131r21
+24r4 student12{16|4R9} 100m15 100r15 101m15 101r15 102m15 102r15 103m15 103r15
+. 132r21
+25r4 student13{16|4R9} 105m15 105r15 106m15 106r15 107m15 107r15 108m15 108r15
+. 133r21
+26r4 student14{16|4R9} 110m15 110r15 111m15 111r15 112m15 112r15 113m15 113r15
+. 134r21
+27r4 student15{16|4R9} 115m15 115r15 116m15 116r15 117m15 117r15 118m15 118r15
+. 135r21
+28r4 class1{11|7R9[6]} 164m27 170m41 170r41 183r27 187r23 188r23 197r23 202m28
+. 202r28 203r27 206r23 207m24 207r24 208r23
+29r4 class2{11|7R9[6]} 165m27 174m41 174r41 184r27 189r23 192r63 193m28 193r28
+. 194r63 197r31 198m24 198r24 199r26 206r31 208r31
+30r4 class3{11|7R9[6]} 166m27 178m41 178r41 185r27 187r31 188r31 189r31
+31A9 StudentArray(16|4R9)<integer> 32r15
+32a4 students{31A9} 121m4 122m4 123m4 124m4 125m4 126m4 127m4 128m4 129m4
+. 130m4 131m4 132m4 133m4 134m4 135m4 141r21 142r37 145m36 145r36 148r46
+. 151m37 151r37 156r21 159r43 170r54 174r54 178r54
+137i8 i{integer} 140r39 141r31 142r47 145r46 148r56 151r47 155r39 156r31
+. 158r39 159r53
+169i8 i{integer} 170r64
+172i8 i{integer} 173r32 174r64
+176i8 i{integer} 177r32 178r64
+X 16 student.ads
+2K9*student 15|3w6 3r23 16|25e12
+4R9*Student_Grades 15|7r40 13r16 14r16 15r16 16r16 17r16 18r16 19r16 20r16
+. 21r16 22r16 23r17 24r17 25r17 26r17 27r16 31r53 16|22e14
+7V13*Do_All_Grades_Written{boolean} 15|142s14
+8V13*Does_Student_Pass_All_Subjects{boolean} 15|148s14
+9V13*Grade_Average{float} 15|159s23
+9r27 G{4R9} 15|159r38
+12U14*Set_Grade 15|36s4 37s4 38s4 39s4 41s4 42s4 43s4 44s4 45s4 47s4 48s4
+. 49s4 50s4 51s4 53s4 54s4 55s4 56s4 57s4 59s4 60s4 61s4 62s4 63s4 65s4 66s4
+. 67s4 68s4 69s4 71s4 72s4 73s4 74s4 75s4 77s4 78s4 79s4 80s4 81s4 83s4 84s4
+. 85s4 86s4 87s4 89s4 90s4 91s4 92s4 95s4 96s4 97s4 98s4 100s4 101s4 102s4
+. 103s4 105s4 106s4 107s4 108s4 110s4 111s4 112s4 113s4 115s4 116s4 117s4
+. 118s4
+13U14*Print_Grades 15|141s7 156s7
+14U14*Put_Grade_To_All_Subjects 15|9s7 151s10
+14r40 G{4R9} 15|9r34
+14e67 GR{17|4E9} 15|9r42
+15U14*End_Semester_For_Student 15|145s10
+X 17 subject.ads
+1K9*subject 15|4w6 4r23 9r48 45r25 45r38 51r25 51r38 57r25 63r25 69r25 75r25
+. 81r25 87r25 151r51 193r39 17|6e12
+3n26*CPP{3E9} 15|39r25 44r25 50r25 56r25 62r25 68r25 74r25 80r25 86r25 92r26
+. 98r26 103r26 108r26 113r26 118r26 193r47
+3n31*C{3E9} 15|36r25 41r25 47r25 53r25 59r25 65r25 71r25 77r25 83r25 89r26
+. 95r26 100r26 105r26 110r26 115r26
+3n34*JAVA{3E9} 15|37r25 42r25 48r25 54r25 60r25 66r25 72r25 78r25 84r25 90r26
+. 96r26 101r26 106r26 111r26 116r26
+3n40*Python{3E9} 15|38r25 43r25 49r25 55r25 61r25 67r25 73r25 79r25 85r25
+. 91r26 97r26 102r26 107r26 112r26 117r26
+3n48*ADA{3E9} 15|45r33 51r33 57r33 63r33 69r33 75r33 81r33 87r33
+4n25*NOT_WRITTEN{4E9} 15|79r33 84r31 193r52
+4n38*FAIL{4E9} 15|83r28 87r38 151r59
+4n44*PASS{4E9} 15|43r33 54r31 56r30 60r31 62r30 71r28 74r30 75r38 77r28 80r30
+. 81r38 85r33 89r29 91r34 95r29 97r34 100r29 102r34 105r29 107r34 110r29
+. 112r34 115r29 117r34
+4n50*SATISFACTORY{4E9} 15|38r33 47r28 48r31 49r33 50r30 51r46
+4n64*GOOD{4E9} 15|37r31 42r31 44r30 45r46 53r28 57r38 66r31 67r33 69r38 72r31
+4n70*EXCELLENT{4E9} 15|9r56 36r28 39r30 41r28 55r33 59r28 61r33 63r38 65r28
+. 68r30 73r33 78r31 86r30 90r32 92r31 96r32 98r31 101r32 103r31 106r32 108r31
+. 111r32 113r31 116r32 118r31
+

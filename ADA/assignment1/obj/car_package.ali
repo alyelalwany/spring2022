@@ -1,0 +1,110 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U car_package%b		car_package.adb		c7b6f44d NE OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_6%s	s-conca6.adb		s-conca6.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U car_package%s		car_package.ads		af28837e EE NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
+D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-finali.ads		20210520051128 bf4f806b ada.finalization%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-strmap.ads		20210520051130 5a88892a ada.strings.maps%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-strunb.ads		20210520051130 03325227 ada.strings.unbounded%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D car_package.ads	20220317192854 ac1ad159 car_package%s
+D car_package.adb	20220317192834 c558f079 car_package%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
+D s-conca6.ads		20210520051132 d2c72db2 system.concat_6%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-finroo.ads		20210520051132 4ff27390 system.finalization_root%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20210520051134 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [get_name car_package 6 13 none]
+G c Z s b [get_first_day car_package 7 13 none]
+G c Z s b [get_last_day car_package 8 13 none]
+G c Z s b [set_name car_package 9 14 none]
+G c Z s b [set_first_day car_package 10 14 none]
+G c Z s b [set_last_day car_package 11 14 none]
+G c Z s b [print_car car_package 12 14 none]
+G c Z s s [carIP car_package 15 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 16|1r6 1r33 17|1r6 1r23
+X 8 a-string.ads
+16K13*Strings 35e16 16|1r10 1r37
+X 11 a-strunb.ads
+83K21*Unbounded 765e26 16|1w18 1r45
+X 14 a-textio.ads
+58K13*Text_IO 725e16 17|1w10 1r27
+506U14*Put_Line 17|31s7
+X 16 car_package.ads
+3K9*Car_Package 15E9 22l5 22e16 17|2b14 37l5 37t16
+5R9*Car 6r26 7r31 8r30 9r34 10r39 11r38 12r28 15c9 19e14 17|4r27 8r32 12r31
+. 16r35 20r40 24r39 29r29
+6V13*Get_Name{string} 6>22 17|4b13 7l8 7t16
+6r22 C{5R9} 17|4b23 6r14
+7V13*Get_First_Day{integer} 7>27 17|8b13 11l8 11t21
+7r27 C{5R9} 17|8b28 10r14
+8V13*Get_Last_Day{integer} 8>26 17|12b13 15l8 15t20
+8r26 C{5R9} 17|12b27 14r14
+9U14*Set_Name 9=23 9>39 17|16b14 19l8 19t16
+9r23 C{5R9} 17|16b24 18m7
+9a39 dn{string} 17|16b40 18r17
+10U14*Set_First_day 10=28 10>44 17|20b14 23l8 23t21
+10r28 C{5R9} 17|20b29 22m7
+10i44 df{integer} 17|20b45 22r21
+11U14*Set_Last_day 11=27 11>43 17|24b14 28l8 28t20
+11r27 C{5R9} 17|24b28 26m7
+11i43 dl{integer} 17|24b44 26r20
+12U14*Print_Car 12>24 17|29b14 34l8 34t17
+12r24 C{5R9} 17|29b25 32r22 32r63 33r41
+16a7*Name{string} 17|6r16 18m9 32r24
+17i7*FirstDay{integer} 17|10r16 22m9 32r65
+18i7*LastDay{integer} 17|14r16 26m9 33r43
+

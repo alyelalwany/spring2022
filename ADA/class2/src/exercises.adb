@@ -118,4 +118,5 @@ package body exercises is
       end loop;
 
    end spiralPrint;
+
 end exercises;

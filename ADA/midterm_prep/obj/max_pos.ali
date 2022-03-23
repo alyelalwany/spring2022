@@ -1,0 +1,32 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U max_pos%b		max_pos.adb		a1261432 NE OO SU GE IL
+
+U max_pos%s		max_pos.ads		84d3ea14 BN EE NE OO GE IL
+
+D max_pos.ads		20220322230034 84d3ea14 max_pos%s
+D max_pos.adb		20220322231210 25f5fe26 max_pos%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [max_pos standard 6 10 none]
+X 1 max_pos.ads
+2+9 Elem 4r41 5r30
+3E9 Index 4r22 6r34 2|1r34 2r14
+4A9 TA(2+9)<3E9> 6r23 2|1r23
+5V19 "<"{boolean} 5>23 5>26 2|5s22
+5*23 A{2+9}
+5*26 B{2+9}
+6v10*max_pos 6>19 2|1b10 10l5 10t12
+6*19 T{4A9} 2|1b19 2r23 4r13 4r24 5r10 5r24
+X 2 max_pos.adb
+2*4 MaxElem{1|3E9} 5r13 6m10 9r11
+4e8 i 5r27 6r21
+

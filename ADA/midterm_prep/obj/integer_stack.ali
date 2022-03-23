@@ -1,0 +1,67 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U integer_stack%b	integer_stack.ads	84635ebe NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.text_io%s		a-textio.adb		a-textio.ali
+W stacks%s		stacks.adb		stacks.ali  ED
+
+U integer_stack%s	integer_stack.ads	fc7bf464 EB NE OO PK
+W stacks%s		stacks.adb		stacks.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D integer_stack.ads	20220322233218 84635ebe integer_stack%s
+D integer_stack.ads	20220322233218 84635ebe integer_stack%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D stacks.ads		20220322232504 7818aada stacks%s
+D stacks.adb		20220322233826 025e7e18 stacks%b
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c s s s [s integer_stack 2 1 none]
+G c Z s s [push integer_stack 6 14 2_1]
+G c Z s s [pop integer_stack 7 14 2_1]
+G c Z s s [top integer_stack 8 13 2_1]
+G c Z s s [is_empty integer_stack 9 13 2_1]
+G c Z s s [is_full integer_stack 10 13 2_1]
+G c Z s s [size integer_stack 11 13 2_1]
+G c Z s s [tarrayIP integer_stack 14 9 2_1]
+G c Z s s [stackIP integer_stack 15 9 2_1]
+G r i none [s integer_stack 2 1 none] [stacks standard 3 9 none]
+X 12 integer_stack.ads
+2K9*Integer_Stack[15|3]
+X 15 stacks.ads
+3k9*Stacks 12|1w6 2r30 15|19e11
+

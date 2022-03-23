@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 27" line=" 30" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\assignment1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 115" line=" 12" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\assignment1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\src\car_package.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 5" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\assignment1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\src\car_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 22" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\assignment1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\src\registration_package.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 56" line=" 26" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\assignment1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\src\registration_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 103" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\assignment1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 27" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\assignment1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\src\car_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 53" line=" 100" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\assignment1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 2" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\assignment1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\src\car_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 15" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\assignment1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\src\registration_package.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 13" line=" 96" >
+      <vfs_project>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\assignment1.gpr</vfs_project>
+      <vfs_file>C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\src\registration_package.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

@@ -1,0 +1,120 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_SECONDARY_STACK
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U stacksdemo%b		stacksdemo.adb		1367e4b6 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.text_io%s		a-textio.adb		a-textio.ali
+W integer_stack%s	integer_stack.ads	integer_stack.ali
+W stacks%s		stacks.adb		stacks.ali
+W stacksgen%s		stacksgen.adb		stacksgen.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-comlin.ads		20210520051128 4aa66568 ada.command_line%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-flteio.ads		20210520051128 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
+D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D integer_stack.ads	20220322233218 84635ebe integer_stack%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D stacks.ads		20220322232504 7818aada stacks%s
+D stacks.adb		20220322233826 025e7e18 stacks%b
+D stacksdemo.adb	20220322235730 27619918 stacksdemo%b
+D stacksgen.ads		20220322234816 951a22a6 stacksgen%s
+D stacksgen.adb		20220322235806 fb178b98 stacksgen%b
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-valint.ads		20210520051134 e7fcadb7 system.val_int%s
+D s-valuns.ads		20210520051134 dac7b45d system.val_uns%s
+D s-valuei.ads		20210520051134 978dd0a6 system.value_i%s
+D s-valueu.ads		20210520051134 7b8fccf5 system.value_u%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z b b [stacksdemo standard 4 11 none]
+G r i none [stacksdemo standard 4 11 none] [stacks standard 3 9 none]
+G r s stack [stacksdemo standard 4 11 none] [stackIP integer_stack 15 9 2_1]
+G r i none [stacksdemo standard 4 11 none] [stacksgen standard 3 9 none]
+G r c none [stacksdemo standard 4 11 none] [push integer_stack 6 14 2_1]
+G r c none [stacksdemo standard 4 11 none] [is_empty integer_stack 9 13 2_1]
+G r c none [stacksdemo standard 4 11 none] [pop integer_stack 7 14 2_1]
+X 1 ada.ads
+16K9*Ada 20e8 21|1r40 1r58 2r21 9r29 10r27 15r7 20r18 21r27 31r7
+X 2 a-comlin.ads
+36K13*Command_Line 144e21 21|1w44 9r33 10r31 20r22 21r31
+39V13*Argument_Count{natural} 21|9s46 10s44 20s35
+52V13*Argument{string} 21|21s44
+X 4 a-flteio.ads
+20K13*Float_Text_IO[13|46] 21|2w25 31r11
+X 5 a-inteio.ads
+18K13*Integer_Text_IO[14|46] 21|2w4 15r11
+X 13 a-tiflio.ads
+82U14*Put 21|31s25[4|20]
+X 14 a-tiinio.ads
+80U14*Put 21|15s27[5|18]
+X 16 integer_stack.ads
+2K9*Integer_Stack[19|3] 21|1w14 9r8 22r7 24r14 25r7
+X 19 stacks.ads
+3k9*Stacks 19e11 21|1w6 5r31
+4R9*Stack 21|9r22[16|2] 10r20[5]
+6U14*Push 21|22s21[16|2] 27s7[5]
+7U14*Pop 21|25s21[16|2] 30s7[5]
+9V13*is_Empty{boolean} 21|24s28[16|2] 29s26[5]
+X 21 stacksdemo.adb
+4U11*stacksdemo 4b11 40l5 40t15
+5K12 Float_Stack[19|3] 6r8 10r8 29r14
+7i4 N{integer} 21m7 22r30 25m29 26r19
+8f4 F{float} 26m7 27r16 30m15 31r30
+9r4 V{19|4R9[16|2]} 22m27 22r27 24r38 25m26 25r26
+10r4 W{19|4R9[5]} 27m13 27r13 29r36 30m12 30r12
+12K12 IStacks[22|3] 17r31 18r7 34r4 35r4 36r4 37r4 38r4
+13U14 Put_Int 13b14 13>23 16l8 16t15 17r48
+13i23 Item{integer} 15r32
+17U14 Put_Stack[22|14] 39s4
+18r4 S{22|4R9[12]} 34m17 34r17 35m17 35r17 36m17 36r17 37m17 37r17 38m17
+. 38r17 39r14
+20i8 I{integer} 21r54
+X 22 stacksgen.ads
+3k9*Stacksgen 21|1w29 12r27 22|22e14
+4R9 Stack 21|18r15[12]
+6U14 Push 21|34s12[12] 35s12[12] 36s12[12] 37s12[12] 38s12[12]
+14u14 For_Each 21|17r39[12]
+

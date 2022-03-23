@@ -1,0 +1,24 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\class4.gpr
+20220313000912 4d2d2670e3fa0160c28c2047d3abf7ef
+[BOUND OBJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\bag.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\bagrecord.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\gcd.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\pqueue.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\setq.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

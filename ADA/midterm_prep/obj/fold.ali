@@ -1,0 +1,33 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U fold%b		fold.adb		3d3dcdf3 NE OO SU GE IL
+
+U fold%s		fold.ads		57194204 BN EE NE OO GE
+
+D fold.ads		20220322214454 57194204 fold%s
+D fold.adb		20220322215210 6a248ff7 fold%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [fold standard 8 10 none]
+X 1 fold.ads
+2+9 Elem 4r45 5r29 5r42 6r15 8r35 2|1r35 2r8
+3E9 Index 4r26
+4A9 TArray(2+9)<3E9> 8r20 2|1r20
+5V18 Op{2+9} 5>22 5>25 2|5s12
+5*22 A{2+9}
+5*25 B{2+9}
+6*4 Start{2+9} 2|2r16
+8v10*fold 8>16 2|1b10 8l5 8t9
+8*16 T{4A9} 2|1b16 4r13 5r19
+X 2 fold.adb
+2*4 S{1|2+9} 5m7 5r16 7r11
+4e8 I 5r22
+

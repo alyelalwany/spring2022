@@ -1,0 +1,32 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U search%b		search.adb		56ea3689 NE OO SU GE
+
+U search%s		search.ads		c1930da0 BN EE NE OO GE
+
+D search.ads		20220322223448 c1930da0 search%s
+D search.adb		20220322223652 97793b29 search%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [search standard 6 11 none]
+X 1 search.ads
+2+9 Elem 4r45 5r25
+3E9 Index 4r26 6r53 2|1r51
+4A9 TArray(2+9)<3E9> 6r20 2|1r20
+5V18 Prop{boolean} 5>23 2|5s10
+5*23 a{2+9}
+6u11*Search 6>18 6<28 6<44 2|1b11 11l5 11t11
+6*18 t{4A9} 2|1b18 4r13 5r15
+6b28 b{boolean} 2|1b28 3m4 7m10
+6*44 j{3E9} 2|1b44 6m10
+X 2 search.adb
+4e8 i 5r17 6r14
+

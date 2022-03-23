@@ -32,6 +32,7 @@ package body ada_main is
    E116 : Short_Integer; pragma Import (Ada, E116, "system__file_io_E");
    E106 : Short_Integer; pragma Import (Ada, E106, "ada__text_io_E");
    E122 : Short_Integer; pragma Import (Ada, E122, "exercises_E");
+   E126 : Short_Integer; pragma Import (Ada, E126, "operations_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -210,6 +211,7 @@ package body ada_main is
       Ada.Text_Io'Elab_Body;
       E106 := E106 + 1;
       E122 := E122 + 1;
+      E126 := E126 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -248,6 +250,7 @@ package body ada_main is
 
 --  BEGIN Object file/option list
    --   C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class2\obj\exercises.o
+   --   C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class2\obj\operations.o
    --   C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class2\obj\main.o
    --   -LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class2\obj\
    --   -LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class2\obj\

@@ -1,0 +1,27 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U maximum%b		maximum.adb		ccc03253 NE OO SU GE IL
+
+U maximum%s		maximum.ads		43b3f56c BN EE NE OO GE IL
+
+D maximum.ads		20220314150444 43b3f56c maximum%s
+D maximum.adb		20220314151106 8f73c73f maximum%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [maximum standard 6 10 none]
+X 1 maximum.ads
+2+9 T 3r28 6r23 6r33 2|1r26 1r36
+3V19 "<"{boolean} 3>23 3>25 2|3s9
+3*23 A{2+9}
+3*25 B{2+9}
+6v10*maximum 6>18 6>20 2|1b10 8l5 8t12
+6*18 A{2+9} 2|1b19 3r7 6r14
+6*20 B{2+9} 2|1b22 3r11 4r14
+

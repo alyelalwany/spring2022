@@ -1,0 +1,81 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U stacks%b		stacks.adb		d4b201af NE OO PK GE
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U stacks%s		stacks.ads		7818aada BN EE NE OO PK GE
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D stacks.ads		20220322232504 7818aada stacks%s
+D stacks.adb		20220322233826 025e7e18 stacks%b
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [stacks standard 3 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 14|1r6 1r24
+X 9 a-textio.ads
+58K13*Text_IO 725e16 14|1w10 1r28
+506U14*Put_Line 14|7s10 18s10
+X 13 stacks.ads
+2+9 Elem 6r42 7r42 8r34 14r47 14|4r42 15r42 25r34
+3k9*Stacks 2z9 14E9 19l5 19e11 14|2b14 43l5 43t11
+4R9*Stack 4d16 6r29 7r28 8r20 9r25 10r24 11r21 15c9 18e14 14|4r29 15r28 25r20
+. 30r25 34r24 38r21
+4i16 Max{positive} 15r16 16r23 14|36r29
+6U14*Push 6=19 6>36 14|4b14 13t7
+6r19 V{4R9} 14|4b19 6r18 10m10 10r23 11m10 11r17
+6*36 E{2+9} 14|4b36 11r31
+7U14*Pop 7=18 7<35 14|15b14 24t7
+7r18 V{4R9} 14|15b18 17r19 21r19 22m10 22r23
+7*35 E{2+9} 14|15b35 21m10
+8V13*Top{2+9} 8>17 14|21s15 25b13 28t8
+8r17 V{4R9} 14|25b17 27r15 27r22
+9V13*is_Empty{boolean} 9>22 14|17s10 30b13 33t7
+9r22 V{4R9} 14|30b22 32r14
+10V13*is_Full{boolean} 10>21 14|6s10 34b13 37t7
+10r21 V{4R9} 14|34b21 36r14 36r27
+11V13*size{natural} 11>18 14|38b13 41t7
+11r18 V{4R9} 14|38b18 40r14
+14A9 TArray(2+9)<integer> 16r13
+16a7 Data{14A9} 14|11m12 27r17
+17i7 Pointer{natural} 14|10m12 10r25 11r19 22m12 22r25 27r24 32r16 36r16
+. 40r16
+

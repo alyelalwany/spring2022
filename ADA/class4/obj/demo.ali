@@ -28,7 +28,7 @@ D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D demo.adb		20220303172344 0083933f demo%b
+D demo.adb		20220313001122 0083933f demo%b
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D setq.ads		20220303172156 735c4086 setq%s
@@ -67,13 +67,13 @@ X 11 a-tiinio.ads
 80U14*Put 13|12s5[3|18] 14s5[3|18] 16s4[3|18] 17s5[3|18]
 X 13 demo.adb
 4U11*demo 4b11 18l5 18t9
-6r5 R{16|3R10} 11m5 11r10 11r15 12r20 14r22 15m5 16r19 17r22
+6r4 R{16|3R10} 11m5 11r10 11r15 12r20 14r22 15m5 16r19 17r22
 X 16 setq.ads
 1K9*Setq 13|1w6 2r5 16|21e9
-3R10*Rational 13|6r8 16|19e34
+3R10*Rational 13|6r7 16|19e34
 5V14*Numerator{integer} 13|12s10 16s9
 6V14*Denominator{positive} 13|14s10 17s10
-8V15*"/"{3R10} 13|6s21 15s11 15s17
+8V15*"/"{3R10} 13|6s20 15s11 15s17
 9V15*"/"{3R10} 13|11s12
 10V15*"/"{3R10} 13|11s16
 11V15*"+"{3R10} 13|15s14

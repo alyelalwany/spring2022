@@ -1,0 +1,33 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U map%b			map.adb			c850580e NE OO SU GE
+
+U map%s			map.ads			8846d129 BN EE NE OO GE
+
+D map.ads		20220322220210 8846d129 map%s
+D map.adb		20220322221056 40168927 map%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [map standard 8 10 none]
+X 1 map.ads
+2+9 A 5r47 7r26
+3+9 B 6r47 7r36
+4E9 Index 5r28 6r28
+5A9 TA_Array(2+9)<4E9> 8r20 2|1r20
+6A9 TB_Array(3+9)<4E9> 8r37 2|1r37 2r9
+7V18 Op{3+9} 7>22 2|5s17
+7*22 x{2+9}
+8v10*Map 8>15 2|1b10 8l5 8t8
+8*15 ta{5A9} 2|1b15 2r19 4r13 5r21
+X 2 map.adb
+2*4 tb{1|6A9} 5m7 7r11
+4e8 i 5r11 5r25
+

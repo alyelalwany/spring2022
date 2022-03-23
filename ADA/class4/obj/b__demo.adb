@@ -247,11 +247,11 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class4\obj\gcd.o
-   --   C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class4\obj\setq.o
-   --   C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class4\obj\demo.o
-   --   -LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class4\obj\
-   --   -LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class4\obj\
+   --   C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\gcd.o
+   --   C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\setq.o
+   --   C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\demo.o
+   --   -LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\
+   --   -LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\
    --   -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
    --   -static
    --   -lgnat

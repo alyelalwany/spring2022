@@ -1,0 +1,45 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -gnat2020
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U sort%b		sort.adb		cfc64c9e NE OO SU GE
+W max_pos%s		max_pos.adb		max_pos.ali
+W swap%s		swap.adb		swap.ali
+
+U sort%s		sort.ads		96353d37 BN EE NE OO GE
+
+D max_pos.ads		20220322230034 84d3ea14 max_pos%s
+D max_pos.adb		20220322231210 25f5fe26 max_pos%b
+D sort.ads		20220322225924 96353d37 sort%s
+D sort.adb		20220322231148 41735bd4 sort%b
+D swap.ads		20220322225724 9c53c069 swap%s
+D swap.adb		20220323004636 880fe4e8 swap%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [sort standard 6 11 none]
+X 1 max_pos.ads
+6v10*max_pos 4|1w6 4r33
+X 3 sort.ads
+2+9 Elem 4r41 5r30 4|3r35 4r42
+3E9 Index 4r22 4|4r48 5r15
+4A9 TA(2+9)<3E9> 6r28 4|2r28 4r55
+5V19 "<"{boolean} 1|5i19 3|5>23 5>26
+5*23 A{2+9}
+5*26 B{2+9}
+6u11*Sort 6=17 4|2b11 11l5 11t9
+6*17 T{4A9} 4|2b17 7r21 8r33 8r35 9m16 9r16 9m23 9r23
+X 4 sort.adb
+3U14 My_Swap[5|3] 9s7
+4V13 Max_Position[1|6]{3|3E9} 8s19
+5*4 MaxIndex{3|3E9} 8m7 9r26
+7e8 I 8r44 9r19
+X 5 swap.ads
+3u11*Swap 4|1w15 3r29
+

@@ -1,0 +1,43 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U stacks%b		stacks.adb		a5c8d630 NE OO PK GE IL
+
+U stacks%s		stacks.ads		64904770 BN EE NE OO PK GE
+
+D stacks.ads		20220314161450 64904770 stacks%s
+D stacks.adb		20220314163148 c1589140 stacks%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [stacks standard 4 9 none]
+X 1 stacks.ads
+2+9 Elem 8r43 9r43 10r34 16r47 2|3r43 9r43 16r37
+4k9*Stacks 2z9 16E9 22l5 22e11 2|1b14 34l5 34t11
+6R9*Stack 6d16 8r29 9r28 10r20 11r24 12r23 13r20 17c9 20e14 2|3r29 9r29 16r23
+. 21r26 25r25 29r23
+6i16 Max{positive} 17r15 18r23 2|27r29
+8U14*push 8=19 8>36 2|3b14 7t7
+8r19 V{6R9} 2|3b19 5m7 5r20 6m7 6r14
+8*36 E{2+9} 2|3b36 6r28
+9U14*pop 9=18 9<35 2|9b14 15t8
+9r18 V{6R9} 2|9b18 11r22 12r18 13m10 13r23
+9*35 E{2+9} 2|9b36 12m10
+10V13*top{2+9} 10>17 2|12s14 16b13 19t8
+10r17 V{6R9} 2|16b17 18r17 18r24
+11V13*isEmpty{boolean} 11>21 2|11s14 21b13 24t8
+11r21 V{6R9} 2|21b21 23r14
+12V13*isFull{boolean} 12>20 2|25b13 28t8
+12r20 V{6R9} 2|25b20 27r14 27r27
+13V13*size{natural} 13>18 2|29b13 32t8
+13r18 V{6R9} 2|29b18 31r14
+16A9 TArray(2+9)<integer> 18r13
+18a7 Data{16A9} 2|6m9 18r19
+19i7 Pointer{natural} 2|5m9 5r22 6r16 13m12 13r25 18r26 23r16 27r16 31r16
+

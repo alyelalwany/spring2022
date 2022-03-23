@@ -1,0 +1,100 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bag%b			bag.adb			eefa2f1a NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+
+U bag%s			bag.ads			ea72ec04 EE NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bag.ads		20220313020802 ea72ec04 bag%s
+D bag.adb		20220313021008 5c379fd7 bag%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-conca3.ads		20210520051132 0b705ca5 system.concat_3%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [insertone bag 7 14 none]
+G c Z s b [insertmultiple bag 8 14 none]
+G c Z s b [extractone bag 9 14 none]
+G c Z s b [extractmultiple bag 10 14 none]
+G c Z s b [isempty bag 11 13 none]
+G c Z s b [print bag 12 14 none]
+G c Z s s [TbagtypeBIP bag 6 4 none]
+X 1 ada.ads
+16K9*Ada 20e8 14|1r6 1r27 2r5 2r26
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[11|46] 14|1w10 2r9
+X 10 a-textio.ads
+58K13*Text_IO 725e16 14|1w31 2r30
+506U14*Put_Line 14|34s10 51s10
+X 13 bag.ads
+1K9*Bag 15l5 15e8 14|3b14 55l5 55t8
+4I12*Elem{natural} 6r37 7r50 8r54 9r50 10r54 14|5r52 11r34 28r34 40r53
+5I12*Index{integer} 6r27
+6A9*BagType(4I12)<integer> 7r34 8r39 9r35 10r40 11r24 12r23 14|5r36 11r18
+. 17r29 28r18 40r37 48r25
+7U14*insertOne 7=24 7>44 14|5b14 8l8 8t17
+7a24 B{6A9} 14|5b25 7m7 7r16
+7i44 E{4I12} 14|5b45 7r10 7r19
+8U14*insertMultiple 8=29 8>48 8>60 14|10b14 15l8 15t22
+8a29 B{6A9} 14|11b7 14m7 14r16
+8i48 E{4I12} 14|11b27 14r10 14r19
+8i60 Count{positive} 14|11b40 14r24
+9U14*extractOne 9=25 9>44 14|40b14 46l8 46t18
+9a25 B{6A9} 14|40b26 43r10 44m10 44r19
+9i44 E{4I12} 14|40b46 43r13 44r13 44r22
+10U14*extractMultiple 10=30 10>48 10>60 14|27b14 38l8 38t23
+10a30 B{6A9} 14|28b7 31r11 32m10 32r19 35m10
+10i48 E{4I12} 14|28b27 31r14 32r13 32r22 35r13
+10i60 Count{positive} 14|28b40 31r19 32r27
+11V13*isEmpty{boolean} 11>21 14|17b13 25l8 25t15
+11a21 B{6A9} 14|17b22 19r16 20r13
+12U14*print 12>20 14|48b14 53l8 53t13
+12a20 B{6A9} 14|48b21 51r64
+X 14 bag.adb
+19i11 I{integer} 20r16
+50i11 i{integer} 51r35 51r67
+

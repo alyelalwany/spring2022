@@ -1,0 +1,28 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U operations%b		operations.adb		d392a391 NE OO PK
+
+U operations%s		operations.ads		923700a8 EE NE OO PK
+
+D operations.ads	20220311192410 923700a8 operations%s
+D operations.adb	20220311192542 41a5a339 operations%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [increment_by operations 3 13 none]
+G c Z s b [get_increment_value operations 4 13 none]
+X 1 operations.ads
+1K9*Operations 5l5 5e15 2|1b14 17l5 17t15
+3V13*Increment_By{integer} 3>26 3>36 2|5b13 11l8 11t20
+3i26 I{integer} 2|5b26 10r14
+3i36 Incr{integer} 2|5b36 7r10 8r26
+4V13*Get_Increment_Value{integer} 2|13b13 16l8 16t27
+X 2 operations.adb
+3i4 Last_Increment{integer} 8m10 10r16 15r14
+

@@ -1,0 +1,139 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -gnat2020
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U class%b		class.adb		ea14658e NE OO PK GE IL
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W student%s		student.adb		student.ali
+
+U class%s		class.ads		5a3897f8 BN EE NE OO PK GE IL
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W student%s		student.adb		student.ali
+W subject%s		subject.ads		subject.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D class.ads		20220319204312 f7285115 class%s
+D class.adb		20220319213020 3cdffa00 class%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D student.ads		20220319164458 8f171bf6 student%s
+D subject.ads		20220319001616 2207dd1b subject%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [class standard 6 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|2r6 2r23
+X 9 a-textio.ads
+58K13*Text_IO 725e16 12|2w10 2r27
+506U14*Put_Line 12|55s7 56s7 58s10 61s7 62s7 64s7 67s7 73s10 75s10 77s10
+X 11 class.ads
+4+11 Id 5r28 19r49 27r14 12|4r52 56r27 73r31 75r31 78r13 78r42
+5V19 "<"{boolean} 5>22 5>24
+5*22 a{4+11}
+5*24 b{4+11}
+6k9*class 4z11 5z19 24E9 31l5 31e10 12|3b14 100l5 100t10
+7R9*Class_Type 9r31 10r40 11r35 12r27 13r30 14r30 14r50 15r38 16r38 17r43
+. 18r23 19r28 22r33 25c9 29e14 12|4r30 8r44 17r25 21r32 29r41 38r36 48r11
+. 53r31 70r31 70r51 82r39 89r18 94r35
+9V13*Class_Average{float} 9>27 12|21b13 28l8 28t21 61s46 72s10 72s31 73s87
+. 74s13 74s34 75s89 79s53
+9r27 C{7R9} 12|21b28 24r16 24r39 25r38
+10V13*Did_Everyone_Get_Grade{boolean} 10>36 12|29b13 37l8 37t30 66s25
+10r36 C{7R9} 12|29b37 31r16 31r39 32r40
+11V13*Did_Everyone_Pass{boolean} 11>31 12|38b13 46l8 46t25 63s50
+11r31 C{7R9} 12|38b32 40r16 40r39 41r49
+12V13*Get_Grade{16|4E9} 12>23 12>39 12>52 12|47b13 52l8 52t17
+12r23 C{7R9} 12|48b7 51r32
+12i39 N{natural} 12|48b23 51r47
+12e52 S{16|3E9} 12|48b36 51r51
+13U14*Print_Class 13>26 12|53b14 68l8 68t19
+13r26 C{7R9} 12|53b27 56r37 57r16 57r39 59r24 61r61 63r69 66r49
+14U14*Compare 14>22 14>42 12|70b14 81l8 81t15
+14r22 C1{7R9} 12|70b23 72r25 73r41 74r28 78r23
+14r42 C2{7R9} 12|70b43 72r46 73r101 74r49 75r41 75r103 78r52 79r67
+15U14*End_Semester 15=27 12|82b14 87l8 87t20
+15r27 C{7R9} 12|82b28 84r16 84r39 85m36 85r36
+16U14*Change_Grade 16=27 16>50 16>63 16>82 12|88b14 93l8 93t20
+16r27 C{7R9} 12|89b7 92m23 92r23
+16i50 N{natural} 12|89b30 92r38
+16e63 S{16|3E9} 12|89b43 92r47
+16e82 GR{16|4E9} 12|89b62 92r56
+17U14*Add_Student_Grade 17=32 17>54 12|8b14 15l8 15t25
+17r32 C{7R9} 12|8b33 11r27 12m10 12r25 13m10 13r39
+17r54 S{15|4R9} 12|8b56 12r39
+18V13*isFull{boolean} 18>20 12|11s14 17b13 20l8 20t14
+18r20 C{7R9} 12|11r22 17b21 19r14
+19U14*Set_ID 19<21 19>40 12|4b14 7l8 7t14
+19r21 C{7R9} 12|4b22 6m7
+19*40 name{4+11} 12|4b42 6r17
+21U22 Operation 21=32 12|97s10
+21r32 S{15|4R9}
+22u14*For_Each 22=23 12|94b14 99l8 99t16
+22r23 C{7R9} 12|94b24 96r16 96r39 97m21 97r21
+24A9 StudentArray(15|4R9)<integer> 26r20
+26a7 Student_Arr{24A9} 12|12m12 24r18 24r41 25r40 31r18 31r41 32r42 40r18
+. 40r41 41r51 51r34 57r18 57r41 59r26 84r18 84r41 85m38 92m25 96r18 96r41
+. 97m23
+27*7 Name{4+11} 12|6m9 56r39 73r44 75r44 78r26 78r55
+28i7 Pointer{natural} 12|12r27 13m12 13r41 19r16
+X 12 class.adb
+22f7 sum{float} 25m10 25r17 27r14
+24i11 i{integer} 25r53
+31i11 i{integer} 32r55
+40i11 i{integer} 41r64
+57i11 i{integer} 58r49 59r39
+84i11 i{integer} 85r51
+96i11 i{integer} 97r36
+X 15 student.ads
+2K9*student 11|1w6 1r19 12|1w6 1r23 15|25e12
+4R9*Student_Grades 11|17r62 21r42 24r53 12|8r63 15|22e14
+6V13*Grade_of_Subject{16|4E9} 12|51s14
+7V13*Do_All_Grades_Written{boolean} 12|32s17
+8V13*Does_Student_Pass_All_Subjects{boolean} 12|41s17
+9V13*Grade_Average{float} 12|25s23
+12U14*Set_Grade 12|92s7
+12r25 G{4R9} 12|92r18
+12e52 S{16|3E9} 12|92r42
+12e71 GR{16|4E9} 12|92r50
+13U14*Print_Grades 12|59s10
+15U14*End_Semester_For_Student 12|85s10
+X 16 subject.ads
+1K9*subject 11|2w6 2r19 16|6e12
+3E9*Subject_Names 11|12r56 16r67 12|48r40 89r47 16|3e52
+4E9*Grade_Range 11|12r78 16r87 12|48r62 89r67 16|4e80
+

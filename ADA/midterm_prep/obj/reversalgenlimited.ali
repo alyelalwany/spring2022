@@ -1,0 +1,32 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U reversalgenlimited%b	reversalgenlimited.adb	6a9b48f5 NE OO SU GE IL
+
+U reversalgenlimited%s	reversalgenlimited.ads	0c0beb31 BN EE NE OO GE
+
+D reversalgenlimited.ads  20220323005556 0c0beb31 reversalgenlimited%s
+D reversalgenlimited.adb  20220323010124 6690a3c4 reversalgenlimited%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [reversalgenlimited standard 6 11 none]
+X 1 reversalgenlimited.ads
+2+9 Elem 4r44 5r36
+3E9 Index 4r25 2|2r13 3r13 7r17 8r17
+4A9 TArray(2+9)<3E9> 6r40 2|1r42
+5U19 Swap 5=24 5=26 2|6s7
+5*24 A{2+9}
+5*26 B{2+9}
+6u11*reversalgenlimited 6=30 2|1b11 10l5 10t23
+6*30 T{4A9} 2|1b31 2r22 3r22 6m13 6r13 6m24 6r24
+X 2 reversalgenlimited.adb
+2*4 Start{1|3E9} 5r10 6r16 7m7 7r29
+3*4 Finish{1|3E9} 5r18 6r27 8m7 8r29
+

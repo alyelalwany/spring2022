@@ -1,0 +1,26 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U swap%b		swap.adb		00d099a6 NE OO SU GE
+
+U swap%s		swap.ads		9c53c069 BN EE NE OO GE
+
+D swap.ads		20220314152604 9c53c069 swap%s
+D swap.adb		20220314152650 9c8359cf swap%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [swap standard 4 11 none]
+X 1 swap.ads
+2+9 T 4r31 2|1r28 2r9
+4u11*Swap 4=17 4=20 2|1b11 7l5 7t9
+4*17 A{2+9} 2|1b16 2r13 4r10 5m4
+4*20 B{2+9} 2|1b18 5r8 6m4
+X 2 swap.adb
+2*4 Tmp{1|2+9} 4m4 6r8
+

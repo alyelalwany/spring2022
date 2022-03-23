@@ -1,0 +1,87 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U stacksgen%b		stacksgen.adb		c0f97c53 NE OO PK GE IL
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U stacksgen%s		stacksgen.ads		951a22a6 BN EE NE OO PK GE
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D stacksgen.ads		20220322234816 951a22a6 stacksgen%s
+D stacksgen.adb		20220322235806 fb178b98 stacksgen%b
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [stacksgen standard 3 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 14|1r6 1r23
+X 9 a-textio.ads
+58K13*Text_IO 725e16 14|1w10 1r27
+506U14*Put_Line 14|7s10 17s10
+X 13 stacksgen.ads
+2+9 Elem 6r45 7r45 8r36 13r49 17r47 14|4r45 14r45 24r36
+3k9*Stacksgen 2z9 17E9 22l5 22e14 14|2b14 49l5 49t14
+4R9*Stack 4d16 6r31 7r30 8r22 9r27 10r26 11r23 14r31 18c9 21e14 14|4r31 14r30
+. 24r22 29r27 33r26 37r23 42r31
+4i16 Max{positive} 18r16 19r30 14|35r28
+6U14*Push 6=20 6>38 14|4b14 13l8 13t12
+6r20 V{4R9} 14|4b20 6r19 10m10 10r32 11m10 11r18
+6*38 E{2+9} 14|4b38 11r32
+7U14*Pop 7=19 7<37 14|14b14 23l8 23t11
+7r19 V{4R9} 14|14b19 16r20 20r28 21m10 21r23
+7*37 E{2+9} 14|14b37 20m10
+8V13*Top{2+9} 8>18 14|20s23 24b13 27l8 27t11
+8r18 V{4R9} 14|24b18 26r14 26r22
+9V13*Is_Empty{boolean} 9>23 14|16s10 29b13 32l8 32t16
+9r23 V{4R9} 14|29b23 31r14
+10V13*Is_Full{boolean} 10>22 14|6s10 33b13 36l8 36t15
+10r22 V{4R9} 14|33b22 35r14 35r26
+11V13*Size{natural} 11>19 14|37b13 40l8 40t12
+11r19 V{4R9} 14|37b19 39r14
+13U22 Process_Element 13>39 14|45s10
+13*39 Item{2+9}
+14u14*For_Each 14>24 14|42b14 47l8 47t16
+14r24 S{4R9} 14|42b24 44r16 44r32 45r27
+17A9 TArray(2+9)<integer> 19r17
+19a7 Data{17A9} 14|11m12 26r16 44r18 44r34 45r29
+20i7 Pointer{natural} 14|10m12 10r34 11r20 21m12 21r25 26r24 31r16 35r16
+. 39r16
+X 14 stacksgen.adb
+44i11 i{integer} 45r35
+

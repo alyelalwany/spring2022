@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__stack_demo.o
+[PROJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class5\class5.gpr
+20220314162154 2b2f029d47ee105f47dfd8c722f727c5
+[BOUND OBJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class5\obj\stacks.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class5\obj\integer_stack.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class5\obj\stack_demo.o
+[GENERATED SOURCE FILES]
+b__stack_demo.ads
+b__stack_demo.adb
+b__stack_demo.ali
+[RESULTING OPTIONS]
+-LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class5\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class5\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

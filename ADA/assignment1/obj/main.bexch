@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\assignment1.gpr
+20220314164434 80380b34742bd5b07eb38f93d77ca259
+[BOUND OBJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\obj\car_package.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\obj\registration_package.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment1\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

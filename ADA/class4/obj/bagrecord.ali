@@ -1,0 +1,105 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bagrecord%b		bagrecord.adb		a06f6f55 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U bagrecord%s		bagrecord.ads		854ee7a2 EE NE OO PK IL
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bagrecord.ads		20220313023538 854ee7a2 bagrecord%s
+D bagrecord.adb		20220313023742 7d9ed43e bagrecord%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [insertone bagrecord 5 14 none]
+G c Z s b [insertmultiple bagrecord 6 14 none]
+G c Z s b [extractone bagrecord 7 14 none]
+G c Z s b [extractmultiple bagrecord 8 14 none]
+G c Z s b [isempty bagrecord 9 13 none]
+G c Z s b [print bagrecord 10 14 none]
+G c Z s b [size bagrecord 11 14 none]
+G c Z s s [tarrayIP bagrecord 14 9 none]
+G c Z s s [tbagIP bagrecord 15 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 14|1r6 1r27 2r5 2r26 41r10 42r10 43r10 44r10
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[11|46] 14|1w10 2r9 41r14 43r14
+X 10 a-textio.ads
+58K13*Text_IO 725e16 14|1w31 2r30 42r14 44r14
+262U14*New_Line 14|44s22
+463U14*Put 14|42s22
+506U14*Put_Line 14|29s10
+X 11 a-tiinio.ads
+80U14*Put 14|41s30[3|18] 43s30[3|18]
+X 13 bagrecord.ads
+1K9*BagRecord 14E9 20l5 20e14 14|3b14 51l5 51t14
+3I12*Elem{natural} 5r48 6r53 7r49 8r54 14r46 14|5r47 10r54 16r47 23r52
+4R9*TBag 5r35 6r40 7r36 8r41 9r24 10r23 11r22 15c9 18e14 14|5r35 10r42 16r35
+. 23r40 34r23 38r23 47r22
+5U14*insertOne 5=25 5>41 14|5b14 9t8
+5r25 B{4R9} 14|5b25 7m7 7r19 8m7 8r17
+5i41 E{3I12} 14|5b41 7r13 7r25
+6U14*insertMultiple 6=30 6>46 6>59 14|10b16 14t8
+6r30 B{4R9} 14|10b32 12m7 12r19 13m7 13r17
+6i46 E{3I12} 14|10b48 12r13 12r25
+6i59 Count{positive} 14|10b60 12r30 13r26
+7U14*extractOne 7=26 7>42 14|16b13 22t8
+7r26 B{4R9} 14|16b25 18r10 19m10 19r22 20m10 20r20
+7i42 E{3I12} 14|16b41 18r16 19r16 19r28
+8U14*extractMultiple 8=31 8>47 8>60 14|23b13 33t8
+8r31 B{4R9} 14|23b30 25r10 26m10 26r22 27m10 27r20 30m10 31m10 31r20 31r29
+8i47 E{3I12} 14|23b46 25r16 26r16 26r28 30r16 31r35
+8i60 Count{positive} 14|23b57 25r21 26r32 27r29
+9V13*isEmpty{boolean} 9>21 14|34b13 37t7
+9r21 B{4R9} 14|34b21 36r14
+10U14*print 10>20 14|38b14 46t7
+10r20 B{4R9} 14|38b20 43r34
+11V14*Size{natural} 11>19 14|47b14 50t8
+11r19 B{4R9} 14|47b19 49r14
+14A9 TArray(3I12)<integer> 16r12
+16a7*Arr{14A9} 14|7m9 7r21 12m9 12r21 18r12 19m12 19r24 25r12 26m12 26r24
+. 30m12 31r31 43r36
+17i7*size{natural} 14|8m9 8r19 13m9 13r19 20m12 20r22 27m12 27r22 31m12 31r22
+. 36r16 49r16
+X 14 bagrecord.adb
+40i11 I{integer} 41r34 43r40
+

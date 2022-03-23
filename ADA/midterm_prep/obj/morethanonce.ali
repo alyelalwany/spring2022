@@ -1,0 +1,32 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U morethanonce%b	morethanonce.adb	36cdc8b7 NE OO SU GE IL
+
+U morethanonce%s	morethanonce.ads	d2b97ae4 BN EE NE OO GE IL
+
+D morethanonce.ads	20220323014106 d2b97ae4 morethanonce%s
+D morethanonce.adb	20220323014106 e474b253 morethanonce%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [morethanonce standard 6 11 none]
+X 1 morethanonce.ads
+2+9 Elem 4r44
+3E9 Index 4r25 6r65 6r84 2|2r49 2r69 7r24 8r16
+4A9 TArray(2+9)<3E9> 6r26 2|2r8
+6u11*morethanonce 6>24 6<34 6<53 6<72 2|1b11 16l5 16t17
+6*24 T{4A9} 2|2b4 7r13 7r36 8r34 9r13 9r21
+6b34 bool{boolean} 2|2b16 5m4 10m13
+6*53 index1{3E9} 2|2b36 11m13
+6*72 index2{3E9} 2|2b56 12m13
+X 2 morethanonce.adb
+7e8 i 8r28 9r24 11r23
+8e11 j 9r16 12r23
+

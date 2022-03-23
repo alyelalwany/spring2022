@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__random_generator.o
+[PROJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment2\assignment2.gpr
+20220319203326 b668d9bc061ec3c28675d22dc5758101
+[BOUND OBJECT FILES]
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment2\obj\random_generator.o
+[GENERATED SOURCE FILES]
+b__random_generator.ads
+b__random_generator.adb
+b__random_generator.ali
+[RESULTING OPTIONS]
+-LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment2\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\assignment2\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

@@ -1,19 +1,19 @@
 [GENERATED OBJECT FILE]
 b__demo.o
 [PROJECT FILES]
-C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class4\class4.gpr
-20220303172128 41890f7f5900160a6c49ff5ffcf08525
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\class4.gpr
+20220313000912 4d2d2670e3fa0160c28c2047d3abf7ef
 [BOUND OBJECT FILES]
-C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class4\obj\gcd.o
-C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class4\obj\setq.o
-C:\Users\I550774\Documents\Personal\tech\Uni\ADA\class4\obj\demo.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\gcd.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\setq.o
+C:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\demo.o
 [GENERATED SOURCE FILES]
 b__demo.ads
 b__demo.adb
 b__demo.ali
 [RESULTING OPTIONS]
--LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class4\obj\
--LC:\Users\I550774\Documents\Personal\tech\Uni\ADA\class4\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\
+-LC:\Users\I550774\Documents\Personal\tech\Uni\spring2022\ADA\class4\obj\
 -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
 -static
 -static-libgcc

@@ -1,0 +1,102 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -gnat2020
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bag%b			bag.adb			38f82d33 NE OO PK GE
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U bag%s			bag.ads			368bd344 BN EE NE OO PK GE
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D bag.ads		20220323155042 368bd344 bag%s
+D bag.adb		20220323155034 a0872b1a bag%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [bag standard 4 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 1r23
+X 9 a-textio.ads
+58K13*Text_IO 725e16 12|1w10 1r27
+506U14*Put_Line 12|59s10
+X 11 bag.ads
+2+9 Elem 7r47 8r43 9r49 10r46 15r47 20r22 12|4r47 14r43 29r49 38r46 60r13
+4k9*Bag 2z9 19E9 28l5 28e8 12|2b14 71l5 71t8
+5R9*BagType 5d18 7r34 8r30 9r36 10r33 11r32 12r33 16r35 24c9 27e14 12|4r34
+. 14r30 29r36 38r33 52r33 56r32 65r35
+5i18 Max{positive} 24r18 25r30
+7V13*getMultiplicity{natural} 7>30 7>43 12|4b13 12l8 12t23
+7r30 B{5R9} 12|4b30 6r16 6r29 7r13 8r20
+7*43 E{2+9} 12|4b43 7r31
+8U14*add 8=19 8>39 12|14b14 28l8 28t11
+8r19 B{5R9} 12|14b19 17r16 17r29 18r13 20m13 20r37 23m19 23r19 24m10 24r42
+. 25m10 25r15 26m10 26r15
+8*39 E{2+9} 12|14b39 18r31 25r42
+9V13*hasElement{boolean} 9=25 9>45 12|29b13 37l8 37t18
+9r25 B{5R9} 12|29b25 31r16 31r29 32r13
+9*45 E{2+9} 12|29b45 32r31
+10U14*remove 10=22 10>42 12|38b14 50l8 50t14
+10r22 B{5R9} 12|38b22 40m19 40r19 43r16 43r29 44r13 45r16 46m16 46r40
+10*42 E{2+9} 12|38b42 44r31
+11U14*print 11=21 12|56b14 63l8 63t13
+11r21 B{5R9} 12|56b21 58r16 58r29 60r25 61r28
+12V13*isEmpty{boolean} 12=22 12|23s10 40s10 52b13 55l8 55t15
+12r22 B{5R9} 12|52b22 54r14
+15U22 process_elem 15=36 12|68s10
+15*36 E{2+9}
+16u14*For_Each 16=24 12|65b14 70l8 70t16
+16r24 B{5R9} 12|65b24 67r16 67r29 68m24 68r24
+19R9 Item 22e14 23r47
+20*7 Element{2+9} 12|7r21 18r21 25m26 32r21 44r21 60r33 68m32
+21i7 Multiplicity{natural} 12|8r28 20m21 20r45 26m26 45r24 46m24 46r48 61r36
+23A9 TArray(19R9)<integer> 25r17
+25a7 T{23A9} 12|6r18 6r31 7r15 8r22 17r18 17r31 18r15 20m15 20r39 25m12 26m12
+. 31r18 31r31 32r15 43r18 43r31 44r15 45r18 46m18 46r42 58r18 58r31 60r27
+. 61r30 67r18 67r31 68m26
+26i7 Pointer{natural} 12|24m12 24r44 25r17 26r17 54r16
+X 12 bag.adb
+6i11 I{integer} 7r18 8r25
+15b7 Flag{boolean} 19m13 23r29
+17i11 I{integer} 18r18 20r18 20r42
+31i11 I{integer} 32r18
+43i11 I{integer} 44r18 45r21 46r21 46r45
+58i11 I{integer} 60r30 61r33
+67i11 I{integer} 68r29
+

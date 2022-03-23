@@ -1,15 +1,15 @@
 package Bag is
      
-   function insert_one(B: BagType ; E: Elem) return BagType;
-   function insert_multiple(B: BagType; E:Elem; Count: Positive) return BagType; 
-   function extract_one(B: BagType; E: Elem) return Elem;
-   function extract_multiple(B: BagType;E:Elem; Count: Positive) return BagType;
-   function is_empty(B: BagType) return Boolean;
-   procedure printBag(B: BagType);
-      
-   
-private   
+
    subtype Elem is Natural;
-   subtype Index is range 1..100 ;
-   type BagType is array (Index) of Natural;
+   subtype Index is Integer range 1..100 ;
+   type BagType is array (Index) of Elem;
+   procedure insertOne(B: in out BagType ; E: in Elem);
+   procedure insertMultiple(B: in out BagType; E: in Elem; Count: in Positive);
+   procedure extractOne(B: in out BagType; E: in Elem);
+   procedure extractMultiple(B: in out BagType;E: in Elem; Count: in Positive);
+   function isEmpty(B: BagType) return Boolean;
+   procedure print(B: BagType);
+
+ 
 end Bag;

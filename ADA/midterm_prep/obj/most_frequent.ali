@@ -1,0 +1,36 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -gnat2020
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U most_frequent%b	most_frequent.adb	4ae92891 NE OO SU GE IL
+
+U most_frequent%s	most_frequent.ads	c1dcd847 BN EE NE OO GE IL
+
+D most_frequent.ads	20220323032032 c1dcd847 most_frequent%s
+D most_frequent.adb	20220323103334 8b35f0d6 most_frequent%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [most_frequent standard 5 10 none]
+X 1 most_frequent.ads
+2+9 Elem 4r44 5r42 2|1r44 2r37 13r8
+3E9 Index 4r25 2|2r46
+4A9 Vector(2+9)<3E9> 5r27 2|1r29
+5v10*most_frequent 5>24 2|1b10 22l5 22t18
+5*24 T{4A9} 2|1b25 5r24 6r23 15r13 15r24 16r28 17r15 18r29
+X 2 most_frequent.adb
+2V13 Multiplicity{natural} 2b13 2>27 2>42 11l8 11t20 16s14 18s15
+2*27 Pattern{1|2+9} 6r13
+2*42 J{1|3E9} 5r35
+3i7 count{natural} 7m13 7r22 10r14
+5e11 I 6r26
+12i4 P{natural} 16r10 18m10
+13*4 X{1|2+9} 17m10 21r11
+15e8 I 16r31 16r34 17r18 18r32 18r35
+

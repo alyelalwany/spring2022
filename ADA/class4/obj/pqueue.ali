@@ -1,0 +1,50 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U pqueue%b		pqueue.adb		636ee8e4 NE OO PK IL
+
+U pqueue%s		pqueue.ads		21df09fc EE NE OO PK IL
+
+D pqueue.ads		20220313011032 21df09fc pqueue%s
+D pqueue.adb		20220313012450 42b1e118 pqueue%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [take pqueue 6 13 none]
+G c Z s b [insert pqueue 7 13 none]
+G c Z s b [isempty pqueue 8 13 none]
+G c Z s b [isfull pqueue 9 13 none]
+G c Z s b [size pqueue 10 13 none]
+G c Z s s [tarrayIP pqueue 13 9 none]
+G c Z s s [queueIP pqueue 14 9 none]
+X 1 pqueue.ads
+1K9*pqueue 13E9 20l5 20e11 2|1b14 42l5 42t11
+3R9*Queue 3d15 6r29 7r31 8r23 9r22 10r21 14c9 18e14 2|4r29 17r31 28r22 33r23
+. 38r22
+3i15 Max{positive} 14r16 15r23 2|11r48 23r48 30r26
+4I12*Elem{integer} 6r43 7r45 13r47 2|4r43 5r16 17r44
+6V13*take{4I12} 6=18 2|4b13 15t7
+6r18 q{3R9} 2|4b19 7r18 10r20 10r27 11m10 11r28 11r46 12m10 12r20
+7V13*insert{boolean} 7=20 7>38 2|17b13 27t7
+7r20 q{3R9} 2|17b20 19r17 22m10 22r17 23m10 23r28 23r46 24m10 24r20
+7i38 e{4I12} 2|17b38 22r35
+8V13*isEmpty{boolean} 8>21 2|7s10 33b13 36t7
+8r21 q{3R9} 2|33b21 35r19
+9V13*isFull{boolean} 9>20 2|19s10 28b13 31t7
+9r20 q{3R9} 2|28b20 30r19 30r24
+10V13*size{natural} 10>18 2|30s14 35s14 38b13 41t7
+10r18 q{3R9} 2|38b19 40r14
+13A9 TArray(4I12)<integer> 15r13
+15a7*data{13A9} 2|10r22 22m12
+16i7*headPointer{positive} 2|10r29 11m12 11r30
+16i20*tailPointer{positive} 2|22r19 23m12 23r30
+17i7*size{natural} 2|12m12 12r22 24m12 24r22 40r16
+X 2 pqueue.adb
+5i7 result{1|4I12} 8m10 10m10 14r14
+

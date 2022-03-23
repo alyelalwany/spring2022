@@ -7,56 +7,71 @@ P ZX
 RN
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U setq%b		setq.adb		cdaad71e NE OO PK
+U setq%b		setq.adb		298b4dec NE OO PK
 W gcd%b			gcd.adb			gcd.ali
 
-U setq%s		setq.ads		735c4086 EE NE OO PK
+U setq%s		setq.ads		72baa6b5 EE NE OO PK
 
 D gcd.adb		20220303170810 4d6c7fc2 gcd%b
-D setq.ads		20220303172156 735c4086 setq%s
-D setq.adb		20220303172258 f39ae85a setq%b
+D setq.ads		20220313002244 72baa6b5 setq%s
+D setq.adb		20220313002236 165d949b setq%b
 D system.ads		20210520051136 2ffa5114 system%s
 G a e
-G c Z s b [numerator setq 5 14 none]
-G c Z s b [denominator setq 6 14 none]
-G c Z s b [Odivide setq 8 14 none]
-G c Z s b [Odivide setq 9 14 none]
-G c Z s b [Odivide setq 10 14 none]
-G c Z s b [Oadd setq 11 14 none]
-G c Z s s [rationalIP setq 16 10 none]
-G r c none [Odivide setq 8 14 none] [gcd standard 1 10 none]
-G r c none [Odivide setq 9 14 none] [gcd standard 1 10 none]
-G r c none [Odivide setq 10 14 none] [gcd standard 1 10 none]
-G r c none [Oadd setq 11 14 none] [gcd standard 1 10 none]
+G c Z s b [numerator setq 5 13 none]
+G c Z s b [denominator setq 6 13 none]
+G c Z s b [Odivide setq 8 13 none]
+G c Z s b [Odivide setq 9 13 none]
+G c Z s b [Odivide setq 10 13 none]
+G c Z s b [Oadd setq 11 13 none]
+G c Z s b [Omultiply setq 12 13 none]
+G c Z s b [Oeq setq 13 13 none]
+G c Z s s [rationalIP setq 16 9 none]
+G r c none [Odivide setq 8 13 none] [gcd standard 1 10 none]
+G r c none [Odivide setq 9 13 none] [gcd standard 1 10 none]
+G r c none [Odivide setq 10 13 none] [gcd standard 1 10 none]
+G r c none [Oadd setq 11 13 none] [gcd standard 1 10 none]
+G r c none [Omultiply setq 12 13 none] [gcd standard 1 10 none]
 X 1 gcd.adb
-1V10*gcd{positive} 3|1w6 22s32
+1V10*gcd{positive} 3|1w6 23s29
 X 2 setq.ads
-1K9*Setq 16E10 21l5 21e9 3|3b14 58l5 58t9
-3R10*Rational 5r29 6r31 8r71 9r26 9r44 10r23 10r54 11r26 11r43 16c10 19e34
-. 3|5r29 10r31 16r12 29r71 34r26 34r44 39r23 39r54 44r23 44r40
-5V14*Numerator{integer} 5>26 3|5b14 8t8
-5r26 R{3R10} 3|5b26 7r16
-6V14*Denominator{positive} 6>28 3|10b14 13t8
-6r28 R{3R10} 3|10b28 12r16
-8V15*"/"{3R10} 8>19 8>40 3|29b15 32t8
-8i19 Numerator{integer} 3|29b20 31r27
-8i40 Denominator{positive} 3|29b40 31r38
-9V15*"/"{3R10} 9>20 9>23 3|34b15 37t8
-9r20 X{3R10} 3|34b20 36r27 36r57
-9r23 Y{3R10} 3|34b23 36r41 36r73
-10V15*"/"{3R10} 10>20 10>33 3|39b15 42t8
-10r20 X{3R10} 3|39b20 41r27 41r41
-10i33 Y{positive} 3|39b33 41r57
-11V15*"+"{3R10} 11>20 11>22 3|44b14 51t8
-11r20 X{3R10} 3|44b17 48r28 49r26
-11r22 Y{3R10} 3|44b19 48r44 49r40 49r56 49r70
-17i28*Numerator{integer} 3|7r18 36r29 36r75 41r29 49r28 49r58
-18i28*Denominator{positive} 3|12r18 36r43 36r59 41r43 48r30 48r46 49r42 49r72
+1K9*Setq 16E9 21l5 21e9 3|3b14 70l5 70t9
+3R9*Rational 5r28 6r30 8r70 9r25 9r42 10r22 10r53 11r25 11r42 12r25 12r42
+. 13r25 16c9 19e14 3|5r28 10r30 16r59 30r70 36r25 36r42 42r22 42r53 47r25
+. 47r42 57r25 57r42 66r25
+5V13*Numerator{integer} 5>24 3|5b13 8l8 8t17
+5r24 R{3R9} 3|5b24 7r14
+6V13*Denominator{positive} 6>26 3|10b13 13l8 13t19
+6r26 R{3R9} 3|10b26 12r14
+8V14*"/"{3R9} 8>18 8>39 3|30b14 34l9 34t11
+8i18 Numerator{integer} 3|30b18 33r25
+8i39 Denominator{positive} 3|30b39 33r36
+9V14*"/"{3R9} 9>18 9>21 3|36b14 40l9 40t11
+9r18 X{3R9} 3|36b18 39r20 39r49
+9r21 Y{3R9} 3|36b21 39r34 39r65
+10V14*"/"{3R9} 10>18 10>32 3|42b14 45l9 45t11
+10r18 X{3R9} 3|42b18 44r25 44r38
+10i32 Y{positive} 3|42b32 44r54
+11V14*"+"{3R9} 11>18 11>21 3|47b14 55l9 55t11
+11r18 X{3R9} 3|47b18 51r28 53r9
+11r21 Y{3R9} 3|47b21 51r44 53r23 53r39 53r53
+12V14*"*"{3R9} 12>18 12>21 3|57b14 64l9 64t11
+12r18 X{3R9} 3|57b18 61r28 62r28
+12r21 Y{3R9} 3|57b21 61r42 62r44
+13V14*"="{boolean} 13>18 13>21 3|66b14 69l9 69t11
+13r18 X{3R9} 3|66b18 68r14 68r58
+13r21 Y{3R9} 3|66b21 68r28 68r44
+17i7*Numerator{integer} 3|7r16 39r22 39r67 44r27 53r11 53r41 61r30 61r44
+. 68r16 68r46
+18i7*Denominator{positive} 3|12r16 39r36 39r51 44r40 51r30 51r46 53r25 53r55
+. 62r30 62r46 68r30 68r60
 X 3 setq.adb
-15V14 Normalize{2|3R10} 15b14 15>26 15>46 27t8 31s16 36s16 41s16 50s14
-15i26 Numerator{integer} 18r12 22r41 24r25
-15i46 Denominator{positive} 22r52 24r38
-22i17 H{positive} 24r35 24r50
-45i7 CommonDenominator{positive} 48m7 50r40
-46i7 SummedNumerator{integer} 49m7 50r24
+15V13 Normalize{2|3R9} 15b13 16>7 16>28 28l8 28t17 33s14 39s9 44s14 54s14
+. 63s14
+16i7 Numerator{integer} 19r10 23r38 25r21
+16i28 Denominator{positive} 23r49 25r36
+23i13 H{positive} 25r33 25r50
+48i7 CommonDenominator{positive} 51m7 54r42
+49i7 SummedNumerator{integer} 52m7 54r25
+58i7 resultDenominator{positive} 62m7 63r42
+59i7 resultNumerator{integer} 61m7 63r25
 

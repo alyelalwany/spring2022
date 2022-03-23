@@ -1,0 +1,35 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U doubleslimited%b	doubleslimited.adb	9e239d6e NE OO SU GE IL
+
+U doubleslimited%s	doubleslimited.ads	73135064 BN EE NE OO GE IL
+
+D doubleslimited.ads	20220323015612 73135064 doubleslimited%s
+D doubleslimited.adb	20220323020002 ed30cd0a doubleslimited%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [doubleslimited standard 6 11 none]
+X 1 doubleslimited.ads
+2+9 Elem 4r45 5r30
+3E9 Index 4r26 6r80 2|1r80 5r22 6r16
+4A9 TArray(2+9)<3E9> 6r31 2|1r31
+5V19 "="{boolean} 5>23 5>26 2|7s18
+5*23 A{2+9}
+5*26 B{2+9}
+6u11*doubleslimited 6>27 6<39 6<59 6<67 2|1b11 15l5 15t19
+6*27 T{4A9} 2|1b27 5r13 5r33 6r31 7r13 7r20
+6b39 bool{boolean} 2|1b39 4m4 8m13
+6*59 index1{3E9} 2|1b59 9m13
+6*67 index2{3E9} 2|1b67 10m13
+X 2 doubleslimited.adb
+5e8 I 6r27 7r15 9r23
+6e11 J 7r22 10r23
+

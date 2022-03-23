@@ -33,7 +33,7 @@ D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D exercises.ads		20220311114704 0ca22c27 exercises%s
-D exercises.adb		20220311114726 02d02f8a exercises%b
+D exercises.adb		20220311192008 02d02f8a exercises%b
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D system.ads		20210520051136 2ffa5114 system%s
@@ -78,7 +78,7 @@ X 9 a-textio.ads
 58K13*Text_IO 725e16 12|1w10 1r27
 463U14*Put 12|117s10
 X 11 exercises.ads
-1K9*exercises 21l5 21e14 12|2b14 121l5 121t14
+1K9*exercises 21l5 21e14 12|2b14 122l5 122t14
 3I9*Index<integer> 5r29 6r26 6r42 15r40 12|75r40
 4I9*Elem<integer> 5r48 6r61 15r54 17r34 18r48 12|75r54 83r34 84r13 104r48
 . 105r11

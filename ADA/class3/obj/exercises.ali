@@ -1,0 +1,97 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_IO
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U exercises%b		exercises.adb		01b08df8 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U exercises%s		exercises.ads		8215be72 EE NE OO PK IL
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D exercises.ads		20220311230202 8215be72 exercises%s
+D exercises.adb		20220311230626 2d51e6e7 exercises%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [recsum exercises 9 13 none]
+G c Z s b [addrec exercises 10 13 none]
+G c Z s b [bubblesort exercises 11 13 none]
+G c Z s b [swap exercises 12 14 none]
+G c Z s b [sumdiagonal exercises 13 13 none]
+G c Z s b [spiralprint exercises 14 14 none]
+G c Z s s [tarrayIP exercises 6 9 none]
+G c Z s s [matrixIP exercises 7 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 1r23
+X 9 a-textio.ads
+58K13*Text_IO 725e16 12|1w10 1r27
+463U14*Put 12|63s10
+X 11 exercises.ads
+1K9*exercises 16l5 16e14 12|2b14 68l5 68t14
+4I9*Index<integer> 6r26 7r26 7r42 9r37 12|6r37 18r39
+5I9*Elem<integer> 6r45 7r61 9r51 10r38 12r34 13r48 12|6r51 15r38 25r34 50r48
+. 51r11
+6A9*TArray(5I9)<4I9> 9r25 10r23 11r36 11r51 12|6r25 15r23 32r36 32r51
+7A9*Matrix(5I9)<4I9><4I9> 13r33 14r33 12|50r33 59r33
+9V13*recSum{5I9} 9>21 9>33 12|6b13 11s15 12l8 12t14
+9a21 T{6A9} 12|6b21 11r23 11r35
+9i33 N{4I9} 12|6b33 8r10 11r26 11r38
+10V13*addRec{5I9} 10>21 12|15b13 18s30 22l8 22t14
+10a21 T{6A9} 12|15b21 17r10 18r17 18r19 18r37 18r50 18r60 20r17 20r19
+11V13*bubbleSort{6A9} 11=25 12|32b13 48l8 48t18
+11a25 T{6A9} 12|32b25 37r19 38r21 39r19 39r27 40m25 40r25 40m32 40r32 46r14
+12U14*Swap 12=20 12=23 12|25b14 30l8 30t12 40s19
+12i20 A{5I9} 12|25b20 27m7 27r12 28r12 29m7 29r12
+12i23 B{5I9} 12|25b23 27r14 28m7 28r14 29r14
+13V13*sumDiagonal{5I9} 13>26 12|50b13 57l8 57t19
+13a26 M{7A9} 12|50b26 53r16 54r19
+14U14*spiralPrint 14>27 12|59b14 66l8 66t19
+14a27 M{7A9} 12|59b27 62r16
+X 12 exercises.adb
+33b7 flag{boolean} 35r13 36m10 41m19
+37i14 I<integer> 38r16 39r22 39r30 40r28 40r35
+51i7 S{11|5I9} 54m10 54r15 56r14
+53i11 I<integer> 54r22 54r25
+62i11 I<integer>
+

@@ -1,0 +1,38 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -gnat2020
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U multiplicity_array%b	multiplicity_array.adb	10caa6bb NE OO SU GE IL
+
+U multiplicity_array%s	multiplicity_array.ads	2690bc0f BN EE NE OO GE IL
+
+D multiplicity_array.ads  20220323102344 2690bc0f multiplicity_array%s
+D multiplicity_array.adb  20220323104658 365a1ab4 multiplicity_array%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [multiplicity_array standard 5 10 none]
+X 1 multiplicity_array.ads
+2+9 Elem 4r44 2|5r31
+3E9 Index 4r25 2|2r41 5r41 15r15 21r13
+4A9 Vector(2+9)<3E9> 5r31 2|1r34
+5v10*multiplicity_array 5>29 2|1b10 28l5 28t23
+5*29 T{4A9} 2|1b30 3r47 3r58 8r24 9r13 17r13 17r24 18r46 21r25 21r37
+X 2 multiplicity_array.adb
+2A9 MultiplicityArrayType(natural)<1|3E9> 3r24
+3a4 MultiplicityArray{2A9} 18m7 20r16 22r10 22r41 27r11
+5V13 multiplicity{natural} 5b13 5>27 5>37 14l8 14t20 18s32
+5*27 E{1|2+9} 9r21
+5*37 j{1|3E9} 8r35
+6i7 Count{natural} 10m13 10r22 13r14
+8e11 I 9r16
+15*4 MaxIndex{1|3E9} 20m4 22r29 23m10 27r30
+17e8 I 18r26 18r49 18r53
+21e8 I 22r60 23r22
+
