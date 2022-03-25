@@ -33,5 +33,4 @@ package body car_package is
          " last day: " & Integer'Image (C.LastDay));
    end Print_Car;
 
-
 end car_package;

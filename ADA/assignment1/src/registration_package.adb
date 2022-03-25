@@ -17,13 +17,13 @@ package body registration_package is
    end printAllCars;
 
    function daysRented (R : Registration; Name : String) return Natural is
-      day : Natural := 0;
+      day : Natural := 1;
    begin
       for I in R.Cars'First .. R.size loop
          if Car_Package.Get_Name (R.Cars (I)) = Name then
-              day := day +
-                Car_Package.Get_Last_Day (R.Cars (I)) -
-                Car_Package.Get_First_Day (R.Cars (I));
+            day :=
+              day + Car_Package.Get_Last_Day (R.Cars (I)) -
+              Car_Package.Get_First_Day (R.Cars (I));
          end if;
       end loop;
       return day;
@@ -41,13 +41,21 @@ package body registration_package is
    end timesRented;
 
    function allTotalDays (R : Registration) return Natural is
-      Sum : Natural := 0;
+      Counter : Natural := 0;
+      type countArray is array (Integer range <>) of Boolean;
+      counterArr : countArray (1 .. 30) := (others => False);
    begin
       for I in R.Cars'First .. R.size loop
-         Sum := Sum + Car_Package.Get_Last_Day (R.Cars (I)) -
-                Car_Package.Get_First_Day (R.Cars (I));
+         for J in Get_First_Day (R.Cars (I)) .. Get_Last_Day (R.Cars (I)) loop
+            counterArr (J) := True;
+         end loop;
       end loop;
-      return Sum;
+      For I in counterArr'Range loop
+         if counterArr(I) then
+            Counter := Counter + 1 ;
+         end if;
+      end loop;
+      return Counter;
    end allTotalDays;
 
    --  function mostRentedCar (R : Registration) return String is
@@ -63,15 +71,17 @@ package body registration_package is
    --     return Get_Name (R.Cars (Mh));
    --  end mostRentedCar;
 
-   function mostRentedCar (R: Registration) return String is
-      MaxIndex: Positive:= 1;
+   function mostRentedCar (R : Registration) return String is
+      MaxIndex : Positive := 1;
    begin
-      for i in R.Cars'First..R.size loop
-         if timesRented(R,Get_Name(R.Cars(i))) > timesRented(R,Get_Name(R.Cars(MaxIndex))) then
+      for i in R.Cars'First .. R.size loop
+         if timesRented (R, Get_Name (R.Cars (i))) >
+           timesRented (R, Get_Name (R.Cars (MaxIndex)))
+         then
             MaxIndex := i;
          end if;
       end loop;
-      return Get_Name(R.Cars (MaxIndex));
+      return Get_Name (R.Cars (MaxIndex));
    end mostRentedCar;
 
    function mostRentedDay (R : Registration) return Natural is
@@ -99,8 +109,8 @@ package body registration_package is
       counter   : countArray (1 .. 30) := (others => 0);
    begin
       for i in R.Cars'First .. R.size loop
-         for j in Get_First_Day (R.Cars (i))..Get_Last_Day (R.Cars (i)) loop
-            counter(j) := counter(j) + 1;
+         for j in Get_First_Day (R.Cars (i)) .. Get_Last_Day (R.Cars (i)) loop
+            counter (j) := counter (j) + 1;
          end loop;
       end loop;
       for i in counter'Range loop

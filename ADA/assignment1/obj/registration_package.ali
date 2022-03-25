@@ -10,7 +10,7 @@ RV NO_STANDARD_STORAGE_POOLS
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U registration_package%b  registration_package.adb  892b4a42 NE OO PK IL
+U registration_package%b  registration_package.adb  1a8dcf11 NE OO PK IL
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W car_package%s		car_package.adb		car_package.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
@@ -35,7 +35,7 @@ D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D car_package.ads	20220317192854 ac1ad159 car_package%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D registration_package.ads  20220317191310 7868388e registration_package%s
-D registration_package.adb  20220317193642 5d59a395 registration_package%b
+D registration_package.adb  20220325061522 ceff26c6 registration_package%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
@@ -69,26 +69,25 @@ G r c none [daysrented registration_package 9 13 none] [get_name car_package 6 1
 G r c none [daysrented registration_package 9 13 none] [get_last_day car_package 8 13 none]
 G r c none [daysrented registration_package 9 13 none] [get_first_day car_package 7 13 none]
 G r c none [timesrented registration_package 10 13 none] [get_name car_package 6 13 none]
-G r c none [alltotaldays registration_package 12 13 none] [get_last_day car_package 8 13 none]
 G r c none [alltotaldays registration_package 12 13 none] [get_first_day car_package 7 13 none]
+G r c none [alltotaldays registration_package 12 13 none] [get_last_day car_package 8 13 none]
 G r c none [mostrentedcar registration_package 13 13 none] [get_name car_package 6 13 none]
 G r c none [mostrentedday registration_package 14 13 none] [get_first_day car_package 7 13 none]
 G r c none [mostrentedday registration_package 14 13 none] [get_last_day car_package 8 13 none]
 G r c none [notrentedcarday registration_package 15 13 none] [get_first_day car_package 7 13 none]
 G r c none [notrentedcarday registration_package 15 13 none] [get_last_day car_package 8 13 none]
 X 14 car_package.ads
-3K9*Car_Package 22e16 16|1w6 1r23 17|1w6 15r10 23r13 25r17 26r17 36r13 47r23
-. 48r17
+3K9*Car_Package 22e16 16|1w6 1r23 17|1w6 15r10 23r13 25r21 26r15 36r13
 5R9*Car 19e14 16|7r53 18r49 17|4r54
-6V13*Get_Name{string} 17|23s25 36s25 70s27 70s64 74s14
-7V13*Get_First_Day{integer} 17|26s29 48s29 83s19 102s19
-8V13*Get_Last_Day{integer} 17|25s29 47s35 83s49 102s47
+6V13*Get_Name{string} 17|23s25 36s25 78s29 79s28 84s14
+7V13*Get_First_Day{integer} 17|26s27 49s19 93s19 112s19
+8V13*Get_Last_Day{integer} 17|25s33 49s49 93s49 112s49
 12U14*Print_Car 17|15s22
 X 16 registration_package.ads
-2K9*Registration_Package 18E9 23l5 23e25 17|2b14 120l5 120t25
+2K9*Registration_Package 18E9 23l5 23e25 17|2b14 130l5 130t25
 3I12*Length{positive} 5r27 19r27
 5R9*Registration 5d22 7r32 8r31 9r28 10r29 11r22 12r30 13r31 14r31 15r33
-. 19c9 22e14 17|4r33 12r32 19r29 32r30 43r31 66r31 77r32 96r34 115r23
+. 19c9 22e14 17|4r33 12r32 19r29 32r30 43r31 74r32 87r32 106r34 125r23
 5i22 Max{3I12} 19r22 20r23 17|6r22
 7U14*addCar 7=21 7>46 17|4b14 10l8 10t14
 7r21 R{5R9} 17|4b22 6r10 6r20 7m10 7r29 8m10 8r18
@@ -96,46 +95,50 @@ X 16 registration_package.ads
 8U14*printAllCars 8>27 17|12b14 17l8 17t20
 8r27 R{5R9} 17|12b28 14r16 14r32 15r33
 9V13*daysRented{natural} 9>24 9>42 17|19b13 30l8 30t18
-9r24 R{5R9} 17|19b25 22r16 22r32 23r35 25r43 26r44
+9r24 R{5R9} 17|19b25 22r16 22r32 23r35 25r47 26r42
 9a42 Name{string} 17|19b43 23r49
-10V13*timesRented{natural} 10>25 10>43 17|32b13 41l8 41t19 70s13 70s50
+10V13*timesRented{natural} 10>25 10>43 17|32b13 41l8 41t19 78s13 79s12
 10r25 R{5R9} 17|32b26 35r16 35r32 36r35
 10a43 Name{string} 17|32b44 36r49
-11V13*Size{natural} 11>18 17|115b13 118l8 118t12
-11r18 R{5R9} 17|115b19 117r14
-12V13*allTotalDays{natural} 12>26 17|43b13 51l8 51t20
-12r26 R{5R9} 17|43b27 46r16 46r32 47r49 48r44
-13V13*mostRentedCar{string} 13>27 17|66b13 75l8 75t21
-13r27 R{5R9} 17|66b28 69r16 69r30 70r25 70r36 70r62 70r73 74r23
-14V13*mostRentedDay{natural} 14>27 17|77b13 94l8 94t21
-14r27 R{5R9} 17|77b28 82r16 82r32 83r34 83r63
-15V13*notRentedCarDay{integer} 15>29 17|96b13 113l8 113t23
-15r29 R{5R9} 17|96b30 101r16 101r32 102r34 102r61
+11V13*Size{natural} 11>18 17|125b13 128l8 128t12
+11r18 R{5R9} 17|125b19 127r14
+12V13*allTotalDays{natural} 12>26 17|43b13 59l8 59t20
+12r26 R{5R9} 17|43b27 48r16 48r32 49r34 49r63
+13V13*mostRentedCar{string} 13>27 17|74b13 85l8 85t21
+13r27 R{5R9} 17|74b28 77r16 77r32 78r26 78r39 79r25 79r38 84r24
+14V13*mostRentedDay{natural} 14>27 17|87b13 104l8 104t21
+14r27 R{5R9} 17|87b28 92r16 92r32 93r34 93r63
+15V13*notRentedCarDay{integer} 15>29 17|106b13 123l8 123t23
+15r29 R{5R9} 17|106b30 111r16 111r32 112r34 112r63
 18A9 TArray(14|5R9)<integer> 20r13
-20a7*Cars{18A9} 17|8m12 14r18 15r35 22r18 23r37 25r45 26r46 35r18 36r37 46r18
-. 47r51 48r46 69r18 70r38 70r75 74r25 82r18 83r36 83r65 101r18 102r36 102r63
-21i7*size{natural} 17|6r12 7m12 7r31 8r20 14r34 22r34 35r34 46r34 69r32 82r34
-. 101r34 117r16
+20a7*Cars{18A9} 17|8m12 14r18 15r35 22r18 23r37 25r49 26r44 35r18 36r37 48r18
+. 49r36 49r65 77r18 78r41 79r40 84r26 92r18 93r36 93r65 111r18 112r36 112r65
+21i7*size{natural} 17|6r12 7m12 7r31 8r20 14r34 22r34 35r34 48r34 77r34 92r34
+. 111r34 127r16
 X 17 registration_package.adb
 14i11 I{integer} 15r41
-20i7 day{natural} 24m15 24r22 29r14
-22i11 I{integer} 23r43 25r51 26r52
+20i7 day{natural} 24m13 25r15 29r14
+22i11 I{integer} 23r43 25r55 26r50
 33i7 Count{natural} 37m13 37r22 40r14
 35i11 I{integer} 36r43
-44i7 Sum{natural} 47m10 47r17 50r14
-46i11 I{integer} 47r57 48r52
-67i7 MaxIndex{positive} 70r80 71m13 74r31
-69i11 i{integer} 70r43 71r25
-78A12 countArray(natural)<integer> 80r21
-79i7 maxDayIndex{integer} 87m7 89r22 90m13 93r23
-80a7 counter{78A12} 84m13 84r28 87r22 88r16 89r13 89r37
-82i11 i{integer} 83r42 83r71
-83i14 j{integer} 84r22 84r37
-88i11 i{integer} 89r46 90r28
-97A12 countArray(natural)<integer> 99r19
-98i7 zeroIndex{integer} 108m13 112r14
-99a7 counter{97A12} 103m13 103r27 106r16 107r13
-101i11 i{integer} 102r42 102r69
-102i14 j{integer} 103r21 103r35
-106i11 i{integer} 107r22 108r26
+44i7 Counter{natural} 55m13 55r24 58r14
+45A12 countArray(boolean)<integer> 46r20
+46a7 counterArr{45A12} 50m13 53r16 54r13
+48i11 I{integer} 49r42 49r71
+49i14 J{integer} 50r25
+53i11 I{integer} 54r24
+75i7 MaxIndex{positive} 79r46 81m13 84r32
+77i11 i{integer} 78r47 81r25
+88A12 countArray(natural)<integer> 90r21
+89i7 maxDayIndex{integer} 97m7 99r22 100m13 103r23
+90a7 counter{88A12} 94m13 94r28 97r22 98r16 99r13 99r37
+92i11 i{integer} 93r42 93r71
+93i14 j{integer} 94r22 94r37
+98i11 i{integer} 99r46 100r28
+107A12 countArray(natural)<integer> 109r19
+108i7 zeroIndex{integer} 118m13 122r14
+109a7 counter{107A12} 113m13 113r28 116r16 117r13
+111i11 i{integer} 112r42 112r71
+112i14 j{integer} 113r22 113r37
+116i11 i{integer} 117r22 118r26
 
