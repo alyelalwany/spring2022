@@ -138,44 +138,31 @@ begin
    students (14) := student14;
    students (15) := student15;
    --Testing the functions from student package.
-   --  for i in 1 .. 10 loop
-   --     Put_Line (">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-   --     Put_Line
---       ("Student #" & Integer'Image (i) & " Grades before processing :- ");
-   --     Print_Grades (students (i));
-   --     if not Do_All_Grades_Written (students (i)) then
-   --        Put_Line ("Student has not all grades written");
-   --        Put_Line ("Ending semester for student...");
-   --        End_Semester_For_Student (students (i));
-   --
-   --     end if;
-   --     if not Does_Student_Pass_All_Subjects (students (i)) then
-   --        Put_Line ("Student has not passed all subjects");
-   --        Put_Line ("Putting FAIL for all subjects for student...");
-   --        Put_Grade_To_All_Subjects (students (i), subject.FAIL);
-   --
-   --     end if;
-   --     Put_Line
-   --       ("Student #" & Integer'Image (i) & " Grades after processing :- ");
-   --     Print_Grades (students (i));
-   --     Put_Line
-   --       ("Student #" & Integer'Image (i) & " has avg : " &
-   --        Float'Image (Grade_Average (G => students (i))));
-   --     Put_Line (">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-   --  end loop;
+   for i in 1 .. 10 loop
+      Put_Line (">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+      Put_Line
+        ("Student #" & Integer'Image (i) & " Grades before processing :- ");
+      Print_Grades (students (i));
+      if not Do_All_Grades_Written (students (i)) then
+         Put_Line ("Student has not all grades written");
+         Put_Line ("Ending semester for student...");
+         End_Semester_For_Student (students (i));
 
-   -- Setting the class Name
+      end if;
+      if not Does_Student_Pass_All_Subjects (students (i)) then
+         Put_Line ("Student has not passed all subjects");
+         Put_Line ("Putting FAIL for all subjects for student...");
+         Put_Grade_To_All_Subjects (students (i), subject.FAIL);
 
-   -- Assigning the students to the classes
-   --  for i in 1 .. 5 loop
-   --     classDemo.Add_Student_Grade (C => class1, S => students (i));
-   --  end loop;
-   --  for i in 6 .. 10 loop
-   --     classDemo.Add_Student_Grade (C => class2, S => students (i));
-   --  end loop;
-   --  for i in 11 .. 15 loop
-   --     classDemo.Add_Student_Grade (C => class3, S => students (i));
-   --  end loop;
+      end if;
+      Put_Line
+        ("Student #" & Integer'Image (i) & " Grades after processing :- ");
+      Print_Grades (students (i));
+      Put_Line
+        ("Student #" & Integer'Image (i) & " has avg : " &
+         Float'Image (Grade_Average (G => students (i))));
+      Put_Line (">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+   end loop;
 
    --Testing getting grade
    Put_Line ("Check if everyone got  grade");
@@ -220,6 +207,6 @@ begin
    -- Testing print
    classDemo.Print_Class (class1);
    classDemo.Print_Class (class2);
+   classDemo.End_Semester (class3);
    classDemo.Print_Class (class3);
-
 end Main;

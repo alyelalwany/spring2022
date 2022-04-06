@@ -14,7 +14,6 @@ package class is
    procedure Compare(C1 : in Class_Type; C2 : in Class_Type); -- compare the classes based on their Class_Average.
    procedure End_Semester(C : in out Class_Type); -- assign random grades(Other than NOT_WRITTEN) to all grades of the students.
    procedure Change_Grade(C : in out Class_Type; N : Natural; S : Subject_Names; GR : Grade_Range); -- change grade for student with index `N` with grade `GR` in subject `S`
-   --  procedure Add_Student_Grade(C : in out Class_Type;S  : in Student_Grades);
    function isFull(C: Class_Type) return Boolean;
 
    generic 
