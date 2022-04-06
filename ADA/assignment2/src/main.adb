@@ -20,17 +20,22 @@ procedure Main is
    student8  : Student_Grades;
    student9  : Student_Grades;
    student10 : Student_Grades;
-   student11  : Student_Grades;
-   student12  : Student_Grades;
-   student13  : Student_Grades;
-   student14  : Student_Grades;
+   student11 : Student_Grades;
+   student12 : Student_Grades;
+   student13 : Student_Grades;
+   student14 : Student_Grades;
    student15 : Student_Grades;
-   class1    : classDemo.Class_Type;
-   class2    : classDemo.Class_Type;
-   class3    : classDemo.Class_Type;
+   class1    : classDemo.Class_Type (1);
+   class2    : classDemo.Class_Type (2);
+   class3    : classDemo.Class_Type (3);
    type StudentArray is array (Integer range <>) of Student_Grades;
    students : StudentArray (1 .. 15);
 begin
+
+   -- Check if Grades are NOT_WRITTEN
+   classDemo.Print_Class (class1);
+   classDemo.Print_Class (class2);
+   classDemo.Print_Class (class3);
 
    -- Initialization
    Set_Grade (student1, C, EXCELLENT);
@@ -91,7 +96,6 @@ begin
    Set_Grade (student10, Python, PASS);
    Set_Grade (student10, CPP, EXCELLENT);
 
-
    Set_Grade (student11, C, PASS);
    Set_Grade (student11, JAVA, EXCELLENT);
    Set_Grade (student11, Python, PASS);
@@ -134,75 +138,88 @@ begin
    students (14) := student14;
    students (15) := student15;
    --Testing the functions from student package.
-   for i in 1 .. 10 loop
-      Put_Line (">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-      Put_Line
-        ("Student #" & Integer'Image (i) & " Grades before processing :- ");
-      Print_Grades (students (i));
-      if not Do_All_Grades_Written (students (i)) then
-         Put_Line ("Student has not all grades written");
-         Put_Line ("Ending semester for student...");
-         End_Semester_For_Student (students (i));
-
-      end if;
-      if not Does_Student_Pass_All_Subjects (students (i)) then
-         Put_Line ("Student has not passed all subjects");
-         Put_Line ("Putting FAIL for all subjects for student...");
-         Put_Grade_To_All_Subjects (students (i), subject.FAIL);
-
-      end if;
-      Put_Line
-        ("Student #" & Integer'Image (i) & " Grades after processing :- ");
-      Print_Grades (students (i));
-      Put_Line
-        ("Student #" & Integer'Image (i) & " has avg : " &
-         Float'Image (Grade_Average (G => students (i))));
-      Put_Line (">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-   end loop;
+   --  for i in 1 .. 10 loop
+   --     Put_Line (">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+   --     Put_Line
+--       ("Student #" & Integer'Image (i) & " Grades before processing :- ");
+   --     Print_Grades (students (i));
+   --     if not Do_All_Grades_Written (students (i)) then
+   --        Put_Line ("Student has not all grades written");
+   --        Put_Line ("Ending semester for student...");
+   --        End_Semester_For_Student (students (i));
+   --
+   --     end if;
+   --     if not Does_Student_Pass_All_Subjects (students (i)) then
+   --        Put_Line ("Student has not passed all subjects");
+   --        Put_Line ("Putting FAIL for all subjects for student...");
+   --        Put_Grade_To_All_Subjects (students (i), subject.FAIL);
+   --
+   --     end if;
+   --     Put_Line
+   --       ("Student #" & Integer'Image (i) & " Grades after processing :- ");
+   --     Print_Grades (students (i));
+   --     Put_Line
+   --       ("Student #" & Integer'Image (i) & " has avg : " &
+   --        Float'Image (Grade_Average (G => students (i))));
+   --     Put_Line (">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+   --  end loop;
 
    -- Setting the class Name
-   classDemo.Set_ID (C => class1, name => 1);
-   classDemo.Set_ID (C => class2, name => 2);
-   classDemo.Set_ID (C => class3, name => 3);
 
    -- Assigning the students to the classes
-   for i in 1 .. 5 loop
-      classDemo.Add_Student_Grade (C => class1, S => students (i));
-   end loop;
-   for i in 6 .. 10 loop
-      classDemo.Add_Student_Grade (C => class2, S => students (i));
-   end loop;
-   for i in 10 .. 15 loop
-      classDemo.Add_Student_Grade (C => class3, S => students (i));
-   end loop;
+   --  for i in 1 .. 5 loop
+   --     classDemo.Add_Student_Grade (C => class1, S => students (i));
+   --  end loop;
+   --  for i in 6 .. 10 loop
+   --     classDemo.Add_Student_Grade (C => class2, S => students (i));
+   --  end loop;
+   --  for i in 11 .. 15 loop
+   --     classDemo.Add_Student_Grade (C => class3, S => students (i));
+   --  end loop;
 
+   --Testing getting grade
+   Put_Line ("Check if everyone got  grade");
+   Put_Line (Boolean'Image (classDemo.Did_Everyone_Get_Grade (class1)));
+   Put_Line (Boolean'Image (classDemo.Did_Everyone_Get_Grade (class2)));
+   Put_Line (Boolean'Image (classDemo.Did_Everyone_Get_Grade (class3)));
+
+   --Testing passing
+   Put_Line ("Check if everyone passed : ");
+   Put_Line (Boolean'Image (classDemo.Did_Everyone_Pass (class1)));
+   Put_Line (Boolean'Image (classDemo.Did_Everyone_Pass (class2)));
+   Put_Line (Boolean'Image (classDemo.Did_Everyone_Pass (class3)));
+
+   -- Testing changing grade in class and check if everyone got grade
+   Put_Line ("Printing class2 before ending the semester");
+   classDemo.Print_Class (class2);
+   Put_Line ("Ending semester and checking if everyone got grade : ");
+   Put_Line (Boolean'Image (classDemo.Did_Everyone_Get_Grade (class2)));
+   classDemo.End_Semester (class2);
+   Put_Line (Boolean'Image (classDemo.Did_Everyone_Get_Grade (class2)));
+   Put_Line ("Printing class2 after ending the semester");
+   classDemo.Print_Class (class2);
+
+   -- Testing the for each function with printing class
+   Put_Line ("Giving all students excellent in class2 : ");
+   classDemo.Compare (class1, class2);
+   set_each_excellent (class2);
+   classDemo.Print_Class (class2);
+
+   --Testing end semester from class package
+   Put_Line ("Check semester end for class1 : ");
+   classDemo.End_Semester (class1);
+   classDemo.Print_Class (class1);
+
+   --Comparing the classes
+   Put_Line
+     ("Give all students excellent in class1 and compare with class2 : ");
+   classDemo.Compare (class1, class2);
+   set_each_excellent (class1);
+   classDemo.Compare (class1, class2);
 
    -- Testing print
    classDemo.Print_Class (class1);
    classDemo.Print_Class (class2);
    classDemo.Print_Class (class3);
-
-   classDemo.Compare (class1, class3);
-   classDemo.Compare (class1, class3);
-   classDemo.Compare (class2, class3);
-
-   -- Testing changing grade in class and check if everyone got grade
-   Put_Line (Boolean'Image (classDemo.Did_Everyone_Get_Grade (class2)));
-   classDemo.Change_Grade (class2, 1, subject.CPP, NOT_WRITTEN);
-   Put_Line (Boolean'Image (classDemo.Did_Everyone_Get_Grade (class2)));
-
-   -- Testing the for each function with printing class
-   classDemo.Compare (class1, class2);
-   set_each_excellent (class2);
-   classDemo.Print_Class(class2);
-
-   --Testing end semester from class package
-   classDemo.End_Semester (class1);
-   classDemo.Print_Class (class1);
-
-   --Comparing the classes
-   classDemo.Compare (class1, class2);
-   set_each_excellent (class1);
-   classDemo.Compare (class1, class2);
 
 end Main;

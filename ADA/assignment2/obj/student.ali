@@ -16,7 +16,7 @@ RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U student%b		student.adb		dc32e0ca NE OO PK IL
+U student%b		student.adb		b248388f NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.discrete_random%s
@@ -46,7 +46,7 @@ D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D student.ads		20220319164458 8f171bf6 student%s
-D student.adb		20220319205848 a455f1a2 student%b
+D student.adb		20220406134058 ca2f29e7 student%b
 D subject.ads		20220319001616 2207dd1b subject%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-conca4.ads		20210520051132 7e642b20 system.concat_4%s
@@ -84,73 +84,75 @@ G c Z s b [end_semester_for_student student 15 14 none]
 G c Z s s [tarrayIP student 18 9 none]
 G c Z s s [student_gradesIP student 19 9 none]
 X 1 ada.ads
-16K9*Ada 20e8 17|1r6 1r23 2r6 72r35
+16K9*Ada 20e8 17|1r6 1r23 2r6 82r35
 X 4 a-numeri.ads
-16K13*Numerics 35e17 17|2r10 72r39
+16K13*Numerics 35e17 17|2r10 82r39
 X 5 a-nudira.ads
-44k22*Discrete_Random 81e33 17|2w19 72r48
-50R9 Generator<28|65R9> 17|73r24[72]
-52V13 Random{18|4E9} 17|77s49[72]
+44k22*Discrete_Random 81e33 17|2w19 82r48
+50R9 Generator<28|65R9> 17|83r24[82]
+52V13 Random{18|4E9} 17|88s50[82]
+61U14 Reset<28|103p14> 17|85s20[82]
 X 6 a-nudira.adb
-53V16 Random[28|86]{18|4E9} 29|402b13[17|72]
-65V16 Random[28|86]{18|4E9} 29|402b13[17|72]
+53V16 Random[28|86]{18|4E9} 29|402b13[17|82]
+65V16 Random[28|86]{18|4E9} 29|402b13[17|82]
 X 12 a-textio.ads
 58K13*Text_IO 725e16 17|1w10 1r27
-506U14*Put_Line 17|60s10
+506U14*Put_Line 17|65s10
 X 14 interfac.ads
 79M9*Unsigned_32
 82M9*Unsigned_64
 X 16 student.ads
-2K9*student 18E9 25l5 25e12 17|3b14 85l5 85t12
+2K9*student 18E9 25l5 25e12 17|3b14 93l5 93t12
 4R9*Student_Grades 6r34 7r39 8r48 9r31 12r36 13r31 14r51 15r50 19c9 22e14
-. 17|5r34 10r39 21r48 30r31 53r36 57r31 64r51 71r50
-6V13*Grade_of_Subject{18|4E9} 6>30 6>50 17|5b13 8t7
-6r30 G{4R9} 17|5b30 7r14
-6e50 S{18|3E9} 17|5b50 7r20
-7V13*Do_All_Grades_Written{boolean} 7>35 17|10b13 19t8
-7r35 G{4R9} 17|10b35 13r27 13r40 14r13
-8V13*Does_Student_Pass_All_Subjects{boolean} 8>44 17|21b13 29t7
-8r44 G{4R9} 17|21b44 23r27 23r40 24r13 24r50
-9V13*Grade_Average{float} 9>27 17|30b13 51t7
-9r27 G{4R9} 17|30b27 33r27 33r40 34r15
-12U14*Set_Grade 12=25 12>52 12>71 17|53b14 56t7
-12r25 G{4R9} 17|53b25 55m7
-12e52 S{18|3E9} 17|53b52 55r13
-12e71 GR{18|4E9} 17|53b71 55r19
-13U14*Print_Grades 13>27 17|57b14 62t8
-13r27 G{4R9} 17|57b27 59r27 59r40 60r96
-14U14*Put_Grade_To_All_Subjects 14=40 14>67 17|64b14 69t8
-14r40 G{4R9} 17|64b40 66r27 66r40 67m10
-14e67 GR{18|4E9} 17|64b67 67r33
-15U14*End_Semester_For_Student 15=39 17|71b14 80t7
-15r39 C{4R9} 17|71b39 75r27 75r40 76r15 77m13
+. 17|6r11 12r40 22r49 33r32 57r18 62r32 72r18 80r51
+6V13*Grade_of_Subject{18|4E9} 6>30 6>50 17|5b13 10l8 10t24
+6r30 G{4R9} 17|6b7 9r14
+6e50 S{18|3E9} 17|6b27 9r21
+7V13*Do_All_Grades_Written{boolean} 7>35 17|12b13 20l8 20t29
+7r35 G{4R9} 17|12b36 14r27 14r42 15r13
+8V13*Does_Student_Pass_All_Subjects{boolean} 8>44 17|22b13 32l8 32t38
+8r44 G{4R9} 17|22b45 25r27 25r42 26r13 26r51
+9V13*Grade_Average{float} 9>27 17|33b13 54l8 54t21
+9r27 G{4R9} 17|33b28 36r27 36r42 37r15
+12U14*Set_Grade 12=25 12>52 12>71 17|56b14 61l8 61t17
+12r25 G{4R9} 17|57b7 60m7
+12e52 S{18|3E9} 17|57b34 60r14
+12e71 GR{18|4E9} 17|57b53 60r20
+13U14*Print_Grades 13>27 17|62b14 69l8 69t20
+13r27 G{4R9} 17|62b28 64r27 64r42 67r32
+14U14*Put_Grade_To_All_Subjects 14=40 14>67 17|71b14 78l8 78t33
+14r40 G{4R9} 17|72b7 75r27 75r42 76m10
+14e67 GR{18|4E9} 17|72b34 76r34
+15U14*End_Semester_For_Student 15=39 17|80b14 91l8 91t32
+15r39 C{4R9} 17|80b40 86r27 86r42 87r13 88m13
 18A9 TArray(18|4E9)<18|3E9> 20r12
-20a7*Arr{18A9} 17|7r16 13r29 13r42 14r15 23r29 23r42 24r15 24r52 33r29 33r42
-. 34r17 55m9 59r29 59r42 60r98 66r29 66r42 67m12 75r29 75r42 76r17 77m15
+20a7*Arr{18A9} 17|9r16 14r29 14r44 15r15 25r29 25r44 26r15 26r53 36r29 36r44
+. 37r17 60m9 64r29 64r44 67r34 75r29 75r44 76m12 86r29 86r44 87r15 88m15
 X 17 student.adb
-13e11 Subject_Name{18|3E9} 14r19
-23e11 Subject_Name{18|3E9} 24r19 24r56
-31f5 Grade{float} 36m16 36r25 38m16 38r25 40m16 40r25 42m16 42r25 44m16 44r25
-. 46m16 46r25 50r14
-33e11 Subject_Name{18|3E9} 34r21
-59e11 Subject_Name{18|3E9} 60r54 60r102
-66e11 Subject_Name{18|3E9} 67r16
-72K15 random_grade[5|44] 73r11 77r36
-73r7 G{5|50R9[72]} 77r56
-75e11 Subject_Name{18|3E9} 76r21 77r19
+14e11 Subject_Name{18|3E9} 15r20
+25e11 Subject_Name{18|3E9} 26r20 26r58
+34f7 Grade{float} 39m16 39r25 41m16 41r25 43m16 43r25 45m16 45r25 47m16 47r25
+. 49m16 49r25 53r14
+36e11 Subject_Name{18|3E9} 37r22
+64e11 Subject_Name{18|3E9} 66r49 67r39
+75e11 Subject_Name{18|3E9} 76r17
+81E15 RandomGrade{18|4E9} 82r65
+82K15 random_grade[5|44] 83r11 85r7 88r37
+83r7 G{5|50R9[82]} 85r27 88r58
+86e11 Subject_Name{18|3E9} 87r20 88r20
 X 18 subject.ads
 1K9*subject 16|1w6 1r19 18|6e12
-3E9*Subject_Names 16|6r54 12r56 18r26 17|5r54 53r56 60r34 18|3e52
+3E9*Subject_Names 16|6r54 12r56 18r26 17|6r31 57r38 66r28 18|3e52
 3n26*CPP{3E9} 16|20r19
 3n48*ADA{3E9} 16|20r24
-4E9*Grade_Range 16|6r76 12r76 14r72 18r53 17|5r76 53r76 60r78 64r72 72r65
+4E9*Grade_Range 16|6r76 12r76 14r72 18r53 17|6r53 57r58 67r13 72r39 81r31
 . 18|4e80
-4n25*NOT_WRITTEN{4E9} 16|20r41 17|14r35 24r35 76r37
-4n38*FAIL{4E9} 17|24r72 35r18
-4n44*PASS{4E9} 17|37r18
-4n50*SATISFACTORY{4E9} 17|39r18
-4n64*GOOD{4E9} 17|41r18
-4n70*EXCELLENT{4E9} 17|43r18
+4n25*NOT_WRITTEN{4E9} 16|20r41 17|15r36 26r36 87r36
+4n38*FAIL{4E9} 17|26r74 38r18 81r49
+4n44*PASS{4E9} 17|40r18
+4n50*SATISFACTORY{4E9} 17|42r18
+4n64*GOOD{4E9} 17|44r18
+4n70*EXCELLENT{4E9} 17|46r18 81r57
 X 28 s-rannum.ads
 77V13*Random{14|79M9} 29|224i21
 78V13*Random{14|82M9} 29|224i21

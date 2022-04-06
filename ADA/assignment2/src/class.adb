@@ -1,18 +1,14 @@
 with student;     use student;
 with Ada.Text_IO; use Ada.Text_IO;
 package body class is
-   procedure Set_ID (C : out Class_Type; name : in Id) is
-   begin
-      C.Name := name;
-   end Set_ID;
-   procedure Add_Student_Grade (C : in out Class_Type; S : in Student_Grades)
-   is
-   begin
-      if not isFull (C => C) then
-         C.Student_Arr (C.Pointer) := S;
-         C.Pointer                 := C.Pointer + 1;
-      end if;
-   end Add_Student_Grade;
+   --  procedure Add_Student_Grade (C : in out Class_Type; S : in Student_Grades)
+   --  is
+   --  begin
+   --     if not isFull (C => C) then
+   --        C.Student_Arr (C.Pointer) := S;
+   --        C.Pointer                 := C.Pointer + 1;
+   --     end if;
+   --  end Add_Student_Grade;
 
    function isFull (C : Class_Type) return Boolean is
    begin
